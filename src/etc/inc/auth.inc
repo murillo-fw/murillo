@@ -137,7 +137,7 @@ if (function_exists("display_error_form") && !isset($config['system']['webgui'][
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="/css/pfSense.css" />
+	<link rel="stylesheet" href="/css/Murillo.css" />
 	<title><?=gettext("Redirecting..."); ?></title>
 </head>
 <body id="error" class="no-menu">
@@ -1655,7 +1655,7 @@ function radius_backed($username, $password, $authcfg, &$attributes = array()) {
 		}
 		if (!is_ipaddr($nasip)) {
 			$nasip = get_interface_ip($nasip);
-			
+
 			if (!is_ipaddr($nasip)) {
 				$nasip = get_interface_ip();//We use wan interface IP as fallback for NAS-IP-Address
 			}
@@ -1664,7 +1664,7 @@ function radius_backed($username, $password, $authcfg, &$attributes = array()) {
 
 		$rauth->putAttribute(RADIUS_NAS_IP_ADDRESS, $nasip, "addr");
 		$rauth->putAttribute(RADIUS_NAS_IDENTIFIER, $nasid);
-		
+
 		if(!empty($attributes['calling_station_id'])) {
 			$rauth->putAttribute(RADIUS_CALLING_STATION_ID, $attributes['calling_station_id']);
 		}
@@ -1675,7 +1675,7 @@ function radius_backed($username, $password, $authcfg, &$attributes = array()) {
 		}
 		if(!empty($attributes['nas_port_type'])) {
 			$rauth->putAttribute(RADIUS_NAS_PORT_TYPE, $attributes['nas_port_type']);
-		}		
+		}
 		if(!empty($attributes['nas_port'])) {
 			$rauth->putAttribute(RADIUS_NAS_PORT, intval($attributes['nas_port']), 'integer');
 		}
@@ -1698,7 +1698,7 @@ function radius_backed($username, $password, $authcfg, &$attributes = array()) {
 		$ret = false;
 	}
 
-	
+
 	// Get attributes, even if auth failed.
 	if ($rauth->getAttributes()) {
 	$attributes = array_merge($attributes,$rauth->listAttributes());
@@ -1709,7 +1709,7 @@ function radius_backed($username, $password, $authcfg, &$attributes = array()) {
 			$stt = strtotime(preg_replace("/\+(\d+):(\d+)$/", " +\${1}\${2}", preg_replace("/(\d+)T(\d+)/", "\${1} \${2}",$stt)));
 		}
 	}
-	
+
 	// close OO RADIUS_AUTHENTICATION
 	$rauth->close();
 
@@ -1902,7 +1902,7 @@ function getUserGroups($username, $authcfg, &$attributes = array()) {
 }
 
 /*
-Possible return values : 
+Possible return values :
 true : authentication worked
 false : authentication failed (invalid login/password, not enought permission, etc...)
 null : error during authentication process (unable to reach remote server, etc...)
