@@ -1,5 +1,5 @@
 /*
- * pfSense-BETA.css
+ * pfSense-dark-BETA.css
  *
  * part of pfSense (https://www.pfsense.org)
  * Copyright (c) 2016-2020 Rubicon Communications, LLC (Netgate)
@@ -18,7 +18,7 @@
  * limitations under the License.
  */
 
-@import url("/css/pfSense.css");
+@import url("/css/Murillo-dark.css");
 
 /*** Experimental Changes Go Here ***/
 
@@ -74,6 +74,10 @@ a.fa, i.fa {
     padding: 5px 5px 5px 5px;
 }
 
+.text-danger {
+    color: #F44336;
+}
+
 .icon-embed-btn {
     padding-right: 16px;
     padding-bottom: 13px;
@@ -85,11 +89,4 @@ a.fa, i.fa {
 
 .ui-widget {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-/** This style adds a gray outline around unchecked checkboxes to
-make them more visible. Unfortunately the exact alignment of those
-outlines varies considerably with browser/OS **/
-input[type="checkbox"]:not(:checked) {
-  outline: 1px solid #888888;
 }
