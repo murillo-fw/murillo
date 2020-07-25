@@ -1,8 +1,12 @@
 #!/bin/sh
 #
-# pfSense-rc
+# Murillo-rc
 #
-# part of pfSense (https://www.pfsense.org)
+# part of Murillo (https://murillo.saggis.com)
+# Copyright (c) 2020 Saggi, LLC
+# All rights reserved.
+#
+# originally based on pfSense (https://www.pfsense.org)
 # Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
 # All rights reserved.
 #
@@ -67,7 +71,7 @@ fi
 #
 /sbin/mount -ur /
 
-fsck_forced_iterations=`/bin/kenv -q pfsense.fsck.force`
+fsck_forced_iterations=`/bin/kenv -q murillo.fsck.force`
 if [ ! -z "${fsck_forced_iterations}" ]; then
 	echo "Forcing filesystem check (${fsck_forced_iterations} times)..."
 	while [ ${fsck_forced_iterations} -gt 0 ]; do
@@ -242,7 +246,7 @@ if ! ramdisk_is_active; then
 fi
 
 echo
-cat /usr/local/share/pfSense/ascii-art/pfsense-logo-small.txt
+cat /usr/local/share/Murillo/ascii-art/Murillo-logo-small.txt
 echo
 echo
 echo "Welcome to ${product} ${version}${version_patch}..."

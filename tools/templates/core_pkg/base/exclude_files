@@ -19,8 +19,8 @@
 ./etc/hosts
 ./etc/master.passwd
 ./etc/passwd
-./etc/pfSense-rc
-./etc/pfSense-rc.shutdown
+./etc/Murillo-rc
+./etc/Murillo-rc.shutdown
 ./etc/platform
 ./etc/pwd.db
 ./etc/rc
