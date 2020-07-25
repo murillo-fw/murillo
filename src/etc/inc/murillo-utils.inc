@@ -1,8 +1,11 @@
 <?php
 /*
  * murillo-utils.inc
+ * part of Murillo (https://murillo.saggis.com)
+ * Copyright (c) 2020 Saggi, LLC
+ * All rights reserved
  *
- * part of pfSense (https://www.pfsense.org)
+ * originally from pfSense (https://www.murillo.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
  *
@@ -19,7 +22,7 @@
  * limitations under the License.
  */
 
-/****f* pfsense-utils/have_natpfruleint_access
+/****f* murillo-utils/have_natpfruleint_access
  * NAME
  *   have_natpfruleint_access
  * INPUTS
@@ -35,7 +38,7 @@ function have_natpfruleint_access($if) {
 	return false;
 }
 
-/****f* pfsense-utils/have_ruleint_access
+/****f* murillo-utils/have_ruleint_access
  * NAME
  *   have_ruleint_access
  * INPUTS
@@ -51,7 +54,7 @@ function have_ruleint_access($if) {
 	return false;
 }
 
-/****f* pfsense-utils/does_url_exist
+/****f* murillo-utils/does_url_exist
  * NAME
  *   does_url_exist
  * INPUTS
@@ -69,7 +72,7 @@ function does_url_exist($url) {
 	}
 }
 
-/****f* pfsense-utils/is_private_ip
+/****f* murillo-utils/is_private_ip
  * NAME
  *   is_private_ip
  * INPUTS
@@ -93,7 +96,7 @@ function is_private_ip($iptocheck) {
 	return $isprivate;
 }
 
-/****f* pfsense-utils/get_tmp_file
+/****f* murillo-utils/get_tmp_file
  * NAME
  *   get_tmp_file
  * INPUTS
@@ -106,7 +109,7 @@ function get_tmp_file() {
 	return "{$g['tmp_path']}/tmp-" . time();
 }
 
-/****f* pfsense-utils/get_dns_servers
+/****f* murillo-utils/get_dns_servers
  * NAME
  *   get_dns_servers - get system dns servers
  * INPUTS
@@ -130,7 +133,7 @@ function get_dns_servers() {
 	return array_unique($dns_servers);
 }
 
-/****f* pfsense-utils/pfSenseHeader
+/****f* murillo-utils/pfSenseHeader
  * NAME
  *   pfSenseHeader
  * INPUTS
@@ -161,7 +164,7 @@ function pfSenseHeader($text) {
 	}
 }
 
-/****f* pfsense-utils/get_css_files
+/****f* murillo-utils/get_css_files
  * NAME
  *   get_css_files - get a list of the available CSS files (themes)
  * INPUTS
@@ -203,7 +206,7 @@ function get_css_files() {
 	return $csslist;
 }
 
-/****f* pfsense-utils/gen_webguicss_field
+/****f* murillo-utils/gen_webguicss_field
  * NAME
  *   gen_webguicss_field
  * INPUTS
@@ -234,7 +237,7 @@ function validate_webguicss_field(&$input_errors, $value) {
 	}
 }
 
-/****f* pfsense-utils/gen_webguifixedmenu_field
+/****f* murillo-utils/gen_webguifixedmenu_field
  * NAME
  *   gen_webguifixedmenu_field
  * INPUTS
@@ -259,7 +262,7 @@ function validate_webguifixedmenu_field(&$input_errors, $value) {
 	}
 }
 
-/****f* pfsense-utils/gen_webguihostnamemenu_field
+/****f* murillo-utils/gen_webguihostnamemenu_field
  * NAME
  *   gen_webguihostnamemenu_field
  * INPUTS
@@ -284,7 +287,7 @@ function validate_webguihostnamemenu_field(&$input_errors, $value) {
 	}
 }
 
-/****f* pfsense-utils/gen_dashboardcolumns_field
+/****f* murillo-utils/gen_dashboardcolumns_field
  * NAME
  *   gen_dashboardcolumns_field
  * INPUTS
@@ -313,7 +316,7 @@ function validate_dashboardcolumns_field(&$input_errors, $value) {
 	}
 }
 
-/****f* pfsense-utils/gen_interfacessort_field
+/****f* murillo-utils/gen_interfacessort_field
  * NAME
  *   gen_interfacessort_field
  * INPUTS
@@ -332,7 +335,7 @@ function gen_interfacessort_field(&$section, $value) {
 	))->setHelp('If selected, lists of interfaces will be sorted by description, otherwise they are listed wan,lan,optn...');
 }
 
-/****f* pfsense-utils/gen_associatedpanels_fields
+/****f* murillo-utils/gen_associatedpanels_fields
  * NAME
  *   gen_associatedpanels_fields
  * INPUTS
@@ -378,7 +381,7 @@ function gen_associatedpanels_fields(&$section, $value1, $value2, $value3, $valu
 	$section->add($group);
 }
 
-/****f* pfsense-utils/gen_webguileftcolumnhyper_field
+/****f* murillo-utils/gen_webguileftcolumnhyper_field
  * NAME
  *   gen_webguileftcolumnhyper_field
  * INPUTS
@@ -397,7 +400,7 @@ function gen_webguileftcolumnhyper_field(&$section, $value) {
 	))->setHelp('If selected, clicking a label in the left column will select/toggle the first item of the group.');
 }
 
-/****f* pfsense-utils/gen_disablealiaspopupdetail_field
+/****f* murillo-utils/gen_disablealiaspopupdetail_field
  * NAME
  *   gen_disablealiaspopupdetail_field
  * INPUTS
@@ -416,7 +419,7 @@ function gen_disablealiaspopupdetail_field(&$section, $value) {
 	))->setHelp('If selected, the details in alias popups will not be shown, just the alias description (e.g. in Firewall Rules).');
 }
 
-/****f* pfsense-utils/gen_pagenamefirst_field
+/****f* murillo-utils/gen_pagenamefirst_field
  * NAME
  *   gen_pagenamefirst_field
  * INPUTS
@@ -437,7 +440,7 @@ function gen_pagenamefirst_field(&$section, $value) {
 		'host name.');
 }
 
-/****f* pfsense-utils/gen_user_settings_fields
+/****f* murillo-utils/gen_user_settings_fields
  * NAME
  *   gen_user_settings_fields
  * INPUTS
@@ -464,7 +467,7 @@ function gen_user_settings_fields(&$section, $pconfig) {
 	gen_pagenamefirst_field($section, $pconfig['pagenamefirst']);
 }
 
-/****f* pfsense-utils/gen_requirestatefilter_field
+/****f* murillo-utils/gen_requirestatefilter_field
  * NAME
  *   gen_requirestatefilter_field
  * INPUTS
@@ -484,7 +487,7 @@ function gen_requirestatefilter_field(&$section, $value) {
 		'before the states are displayed. Useful for systems with large state tables.');
 }
 
-/****f* pfsense-utils/gen_created_updated_fields
+/****f* murillo-utils/gen_created_updated_fields
  * NAME
  *   gen_created_updated_fields
  * INPUTS
@@ -583,7 +586,7 @@ function hardware_offloading_applyflags($iface) {
 	pfSense_interface_capabilities($iface, $flags_on);
 }
 
-/****f* pfsense-utils/enable_hardware_offloading
+/****f* murillo-utils/enable_hardware_offloading
  * NAME
  *   enable_hardware_offloading - Enable a NIC's supported hardware features.
  * INPUTS
@@ -622,7 +625,7 @@ function enable_hardware_offloading($interface) {
 	}
 }
 
-/****f* pfsense-utils/is_alias_inuse
+/****f* murillo-utils/is_alias_inuse
  * NAME
  *   checks to see if an alias is currently in use by a rule
  * INPUTS
@@ -670,7 +673,7 @@ function is_alias_inuse($alias) {
 	return false;
 }
 
-/****f* pfsense-utils/is_schedule_inuse
+/****f* murillo-utils/is_schedule_inuse
  * NAME
  *   checks to see if a schedule is currently in use by a rule
  * INPUTS
@@ -697,7 +700,7 @@ function is_schedule_inuse($schedule) {
 	return false;
 }
 
-/****f* pfsense-utils/setup_microcode
+/****f* murillo-utils/setup_microcode
  * NAME
  *   enumerates all interfaces and calls enable_hardware_offloading which
  *   enables a NIC's supported hardware features.
@@ -718,7 +721,7 @@ function setup_microcode() {
 	unset($iflist);
 }
 
-/****f* pfsense-utils/get_carp_status
+/****f* murillo-utils/get_carp_status
  * NAME
  *   get_carp_status - Return whether CARP is enabled or disabled.
  * RESULT
@@ -843,7 +846,7 @@ function get_dir($dir) {
 	return $dir_array;
 }
 
-/****f* pfsense-utils/WakeOnLan
+/****f* murillo-utils/WakeOnLan
  * NAME
  *   WakeOnLan - Wake a machine up using the wake on lan format/protocol
  * RESULT
@@ -919,8 +922,8 @@ function restore_config_section($section_name, $new_contents) {
 	fclose($fout);
 
 	$xml = parse_xml_config($g['tmp_path'] . "/tmpxml", null);
-	if ($xml['pfsense']) {
-		$xml = $xml['pfsense'];
+	if ($xml['murillo']) {
+		$xml = $xml['murillo'];
 	}
 	else if ($xml['m0n0wall']) {
 		$xml = $xml['m0n0wall'];
@@ -1037,7 +1040,7 @@ function get_disk_info() {
 	return explode(' ', $diskout[0]);
 }
 
-/****f* pfsense-utils/strncpy
+/****f* murillo-utils/strncpy
  * NAME
  *   strncpy - copy strings
  * INPUTS
@@ -1053,7 +1056,7 @@ function strncpy(&$dst, $src, $length) {
 	}
 }
 
-/****f* pfsense-utils/reload_interfaces_sync
+/****f* murillo-utils/reload_interfaces_sync
  * NAME
  *   reload_interfaces - reload all interfaces
  * INPUTS
@@ -1085,7 +1088,7 @@ function reload_interfaces_sync() {
 	interfaces_configure();
 }
 
-/****f* pfsense-utils/reload_all
+/****f* murillo-utils/reload_all
  * NAME
  *   reload_all - triggers a reload of all settings
  *   * INPUTS
@@ -1097,7 +1100,7 @@ function reload_all() {
 	send_event("service reload all");
 }
 
-/****f* pfsense-utils/reload_interfaces
+/****f* murillo-utils/reload_interfaces
  * NAME
  *   reload_interfaces - triggers a reload of all interfaces
  * INPUTS
@@ -1109,7 +1112,7 @@ function reload_interfaces() {
 	send_event("interface all reload");
 }
 
-/****f* pfsense-utils/reload_all_sync
+/****f* murillo-utils/reload_all_sync
  * NAME
  *   reload_all - reload all settings
  *   * INPUTS
@@ -1307,7 +1310,7 @@ function setup_loader_settings($path = "", $upgrade = false) {
 	if (isset($config['system']['maximumtableentries'])) {
 		$maximumtableentries = $config['system']['maximumtableentries'];
 	} else {
-		$maximumtableentries = pfsense_default_table_entries_size();
+		$maximumtableentries = murillo_default_table_entries_size();
 	}
 	$data[] = 'net.pf.request_maxcount="' .  $maximumtableentries . '"';
 
@@ -1941,7 +1944,7 @@ function is_fqdn($fqdn) {
 	return($hostname);
 }
 
-function pfsense_default_state_size() {
+function murillo_default_state_size() {
 	/* get system memory amount */
 	$memory = get_memory();
 	$physmem = $memory[0];
@@ -1950,12 +1953,12 @@ function pfsense_default_state_size() {
 	return $max_states;
 }
 
-function pfsense_default_tables_size() {
+function murillo_default_tables_size() {
 	$current = `pfctl -sm | grep ^tables | awk '{print $4};'`;
 	return $current;
 }
 
-function pfsense_default_table_entries_size() {
+function murillo_default_table_entries_size() {
 	$current = `pfctl -sm | grep table-entries | awk '{print $4};'`;
 	return (trim($current));
 }
@@ -2030,7 +2033,7 @@ function load_thermal_hardware() {
 	}
 }
 
-/****f* pfsense-utils/isvm
+/****f* murillo-utils/isvm
  * NAME
  *   isvm
  * INPUTS
@@ -2921,7 +2924,7 @@ function generate_ipv6_from_mac($mac) {
 	return $ipv6;
 }
 
-/****f* pfsense-utils/load_mac_manufacturer_table
+/****f* murillo-utils/load_mac_manufacturer_table
  * NAME
  *   load_mac_manufacturer_table
  * INPUTS
@@ -2949,7 +2952,7 @@ function load_mac_manufacturer_table() {
 
 }
 
-/****f* pfsense-utils/is_ipaddr_configured
+/****f* murillo-utils/is_ipaddr_configured
  * NAME
  *   is_ipaddr_configured
  * INPUTS
@@ -2970,7 +2973,7 @@ function is_ipaddr_configured($ipaddr, $ignore_if = "", $check_localip = false, 
 	return false;
 }
 
-/****f* pfsense-utils/where_is_ipaddr_configured
+/****f* murillo-utils/where_is_ipaddr_configured
  * NAME
  *   where_is_ipaddr_configured
  * INPUTS
@@ -3074,7 +3077,7 @@ function where_is_ipaddr_configured($ipaddr, $ignore_if = "", $check_localip = f
 	return $where_configured;
 }
 
-/****f* pfsense-utils/pfSense_handle_custom_code
+/****f* murillo-utils/pfSense_handle_custom_code
  * NAME
  *   pfSense_handle_custom_code
  * INPUTS
@@ -3432,7 +3435,7 @@ function get_pppoes_child_interfaces($ifpattern) {
 
 }
 
-/****f* pfsense-utils/pkg_call_plugins
+/****f* murillo-utils/pkg_call_plugins
  * NAME
  *   pkg_call_plugins
  * INPUTS
@@ -3481,7 +3484,7 @@ function compare_by_name($a, $b) {
 	return strcasecmp($a['name'], $b['name']);
 }
 
-/****f* pfsense-utils/getarraybyref
+/****f* murillo-utils/getarraybyref
  * NAME
  *   getarraybyref
  * INPUTS
@@ -3512,7 +3515,7 @@ function &getarraybyref(&$array) {
 	return $item;
 }
 
-/****f* pfsense-utils/send_download_data
+/****f* murillo-utils/send_download_data
  * NAME
  *   send_download_data - Send content to a user's browser as a file to download
  * INPUTS

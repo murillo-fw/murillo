@@ -160,7 +160,7 @@ if ($_POST) {
 	if ($_POST['maximumtableentries']) {
 		$maximumtableentries = $_POST['maximumtableentries'];
 	} else {
-		$maximumtableentries = pfsense_default_table_entries_size();
+		$maximumtableentries = murillo_default_table_entries_size();
 	}
 	if (!is_numericint($maximumtableentries)) {
 		$input_errors[] = gettext("The Firewall Maximum Table Entries value must be an integer.");
@@ -514,22 +514,22 @@ $section->addInput(new Form_Input(
 	'Firewall Maximum States',
 	'number',
 	$pconfig['maximumstates'],
-	['min' => 1, 'placeholder' => pfsense_default_state_size()]
+	['min' => 1, 'placeholder' => murillo_default_state_size()]
 ))->setHelp('Maximum number of connections to hold in the firewall state table. %1$s'.
 	'Note: Leave this blank for the default. On this system the default '.
-	'size is: %2$d', '<br/>', pfsense_default_state_size());
+	'size is: %2$d', '<br/>', murillo_default_state_size());
 
 $section->addInput(new Form_Input(
 	'maximumtableentries',
 	'Firewall Maximum Table Entries',
 	'text',
 	$pconfig['maximumtableentries'],
-	['placeholder' => pfsense_default_table_entries_size()]
+	['placeholder' => murillo_default_table_entries_size()]
 ))->setHelp('Maximum number of table entries for systems such as aliases, '.
 	'sshguard, snort, etc, combined.%1$sNote: Leave this blank for the '.
 	'default. On this system the default size is: %2$d',
 	'<br/>',
-	pfsense_default_table_entries_size());
+	murillo_default_table_entries_size());
 
 $section->addInput(new Form_Input(
 	'maximumfrags',
