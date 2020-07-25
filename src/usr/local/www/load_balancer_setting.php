@@ -2,7 +2,11 @@
 /*
  * load_balancer_setting.php
  *
- * part of pfSense (https://www.pfsense.org)
+ * part of Murillo (https://murillo.saggis.com)
+ * Copyright (c) 2020 Saggi, LLC
+ * All rights reserved
+ * 
+ * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * Copyright (c) 2005-2008 Bill Marquette <bill.marquette@gmail.com>
  * Copyright (c) 2012 Pierre POMES <pierre.pomes@gmail.com>.
