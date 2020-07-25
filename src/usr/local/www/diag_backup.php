@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -239,7 +239,7 @@ if ($_POST) {
 						$input_errors[] = gettext("Warning, could not read file {$_FILES['conffile']['tmp_name']}");
 					} elseif ($_POST['decrypt']) {
 						if (!tagfile_deformat($data, $data, "config.xml")) {
-							$input_errors[] = gettext("The uploaded file does not appear to contain an encrypted pfsense configuration.");
+							$input_errors[] = gettext("The uploaded file does not appear to contain an encrypted murillo configuration.");
 						} else {
 							$data = decrypt_data($data, $_POST['decrypt_password']);
 							if (empty($data)) {

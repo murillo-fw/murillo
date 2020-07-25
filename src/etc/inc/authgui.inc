@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2003-2006 Manuel Kasper <mk@neon1.net>
  * Copyright (c) 2005-2006 Bill Marquette <bill.marquette@gmail.com>
@@ -274,7 +274,7 @@ function display_login_form() {
 		$login_title = gettext(htmlspecialchars($config['system']['hostname'] . " - Login"));
 	} else {
 		$loginbannerstr = sprintf(gettext('Login to %1$s'), $g['product_name']);
-		$login_title = gettext("pfSense - Login");
+		$login_title = gettext("Murillo - Login");
 	}
 
 	$loginautocomplete = isset($config['system']['webgui']['loginautocomplete']) ? '' : 'autocomplete="off"';

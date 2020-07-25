@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -99,7 +99,7 @@ if ($_POST['Submit'] == "No") {
 	<div class="panel-body">
 		<div class="content">
 			<p>
-				<?=gettext("Debugging output can be collected to share with pfSense developers or others providing support or assistance.")?>
+				<?=gettext("Debugging output can be collected to share with Murillo developers or others providing support or assistance.")?>
 				<br/><br/>
 				<i><?=gettext("Inspect the contents to ensure this information is acceptable to disclose before distributing these files.")?></i>
 			</p>

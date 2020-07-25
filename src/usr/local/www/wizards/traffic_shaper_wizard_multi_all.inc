@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -1770,7 +1770,7 @@ function apply_all_chosen_items() {
 			}
 		}
 	}
-	write_config(gettext("Shaper configuration saved via pfSense traffic shaper wizard."));
+	write_config(gettext("Shaper configuration saved via Murillo traffic shaper wizard."));
 }
 
 function wizard_get_bandwidthtype_scale($type = "b") {

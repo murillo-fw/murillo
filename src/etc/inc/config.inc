@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -75,10 +75,10 @@ if (platform_booting(true)) {
 		if (stristr($config_contents, "<m0n0wall>") == true) {
 			echo ".";
 			/* user has just upgraded from m0n0wall, replace root xml tags */
-			log_error(gettext("Upgrading m0n0wall configuration to pfSense... "));
-			$config_contents = str_replace("m0n0wall", "pfsense", $config_contents);
+			log_error(gettext("Upgrading m0n0wall configuration to Murillo... "));
+			$config_contents = str_replace("m0n0wall", "Murillo", $config_contents);
 			if (!config_validate("{$g['conf_path']}/config.xml")) {
-				log_error(gettext("ERROR!  Could not convert m0n0wall -> pfsense in config.xml"));
+				log_error(gettext("ERROR!  Could not convert m0n0wall -> Murillo in config.xml"));
 			}
 			file_put_contents("/cf/conf/config.xml", $config_contents);
 		}
