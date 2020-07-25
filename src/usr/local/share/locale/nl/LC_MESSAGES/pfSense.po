@@ -2296,7 +2296,7 @@ msgstr "Naam"
 #: src/usr/local/www/interfaces.php:920 src/usr/local/www/interfaces.php:3147
 #: src/usr/local/www/load_balancer_virtual_server_edit.php:65
 #: src/usr/local/www/load_balancer_virtual_server_edit.php:70
-#: src/etc/inc/pfsense-utils.inc:3340 src/etc/inc/pfsense-utils.inc:3383
+#: src/etc/inc/murillo-utils.inc:3340 src/etc/inc/murillo-utils.inc:3383
 msgid "Mode"
 msgstr "Mode"
 
@@ -4285,8 +4285,8 @@ msgstr ""
 #: src/usr/local/www/interfaces.php:1769 src/usr/local/www/interfaces.php:1770
 #: src/usr/local/www/interfaces.php:1796 src/usr/local/www/interfaces.php:1809
 #: src/etc/inc/ipsec.inc:460 src/etc/inc/shaper.inc:4317
-#: src/etc/inc/shaper.inc:4762 src/etc/inc/pfsense-utils.inc:2848
-#: src/etc/inc/pfsense-utils.inc:3322
+#: src/etc/inc/shaper.inc:4762 src/etc/inc/murillo-utils.inc:2848
+#: src/etc/inc/murillo-utils.inc:3322
 msgid "None"
 msgstr "Geen"
 
@@ -4474,11 +4474,11 @@ msgstr ""
 
 #: src/usr/local/www/services_router_advertisements.php:123
 msgid ""
-"It is not required to activate DHCPv6 server on pfSense when set to "
+"It is not required to activate DHCPv6 server on Murillo when set to "
 "\"Managed\", \"Assisted\" or \"Stateless DHCP\", it can be another host on "
 "the network."
 msgstr ""
-"Het is niet noodzakelijk om de DHCPv6 server te activeren in pfSense indien "
+"Het is niet noodzakelijk om de DHCPv6 server te activeren in Murillo indien "
 "ingesteld op \"Beheerd\", \"Ondersteund\" of \"Stateless DHCP\", dit kan ook "
 "een andere host in het netwerk zijn."
 
@@ -4887,7 +4887,7 @@ msgstr "Filter toepassen"
 #: src/usr/local/www/status_logs_vpn.php:447
 #: src/usr/local/www/status_logs_common.inc:288
 #: src/usr/local/www/status_logs_common.inc:508
-#: src/etc/inc/pfsense-utils.inc:358
+#: src/etc/inc/murillo-utils.inc:358
 msgid "Log Filter"
 msgstr "Log filter"
 
@@ -5655,7 +5655,7 @@ msgstr "Om de wizard over te slaan, klik op het %s logo op de eerste pagina."
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: src/usr/local/www/index.php:338 src/etc/inc/pfsense-utils.inc:351
+#: src/usr/local/www/index.php:338 src/etc/inc/murillo-utils.inc:351
 msgid "Available Widgets"
 msgstr "Beschikbare Widgets"
 
@@ -8679,11 +8679,11 @@ msgstr "*Systeem Domein Lokale-Zone Type"
 
 #: src/usr/local/www/services_unbound.php:393
 msgid ""
-"The local-zone type used for the pfSense system domain (System | General "
+"The local-zone type used for the Murillo system domain (System | General "
 "Setup | Domain).  Transparent is the default.  Local-Zone type descriptions "
 "are available in the unbound.conf(5) manual pages."
 msgstr ""
-"Het lokale-zone type gebruikt voor pfSense systeem domein (Systeem | "
+"Het lokale-zone type gebruikt voor Murillo systeem domein (Systeem | "
 "Algemene Instellingen | Domein). Transparant is de standaard instelling. "
 "Lokale-Zone type beschijvingens zijn beschikbaar in de unbound.conf(5) "
 "handleiding (manual) pagina's"
@@ -8995,7 +8995,7 @@ msgstr "Adres"
 
 #: src/usr/local/www/status_lb_vs.php:95
 #: src/usr/local/www/widgets/widgets/load_balancer_status.widget.php:66
-#: src/etc/inc/pfsense-utils.inc:395
+#: src/etc/inc/murillo-utils.inc:395
 msgid "Active"
 msgstr "Actief"
 
@@ -9455,10 +9455,10 @@ msgstr ""
 #: src/usr/local/www/system_certmanager.php:710
 msgid ""
 "Optionally paste a private key here. The key will be associated with the "
-"newly signed certificate in pfSense"
+"newly signed certificate in Murillo"
 msgstr ""
 "Kopieer hier optioneel een persoonlijke sleutel. Deze sleutel zal gekoppeld "
-"worden aan het nieuw ondertekende certificaat in pfSense"
+"worden aan het nieuw ondertekende certificaat in Murillo"
 
 #: src/usr/local/www/system_certmanager.php:714
 msgid "*Certificate Lifetime (days)"
@@ -10044,8 +10044,8 @@ msgid "Could not parse %1$s/wizards/%2$s file."
 msgstr "Kan %1$s/wizards/%2$s bestand niet verwerken."
 
 #: src/usr/local/www/wizard.php:117
-msgid "Configuration changed via the pfSense wizard subsystem."
-msgstr "Configuratie is gewijzigd via het pfSense wizard subsysteem ."
+msgid "Configuration changed via the Murillo wizard subsystem."
+msgstr "Configuratie is gewijzigd via het Murillo wizard subsysteem ."
 
 #: src/usr/local/www/wizard.php:215
 msgid "Wizard"
@@ -11520,10 +11520,10 @@ msgstr "Netgate Device ID"
 
 #: src/usr/local/www/system_advanced_misc.php:662
 msgid ""
-"Enable this option to not send Netgate Device ID to pfSense as part of User-"
+"Enable this option to not send Netgate Device ID to Murillo as part of User-"
 "Agent header."
 msgstr ""
-"Schakel deze optie in om de Netgate Device ID niet naar pfSense te sturen "
+"Schakel deze optie in om de Netgate Device ID niet naar Murillo te sturen "
 "als onderdeel van de User-Agent header."
 
 #: src/usr/local/www/system_advanced_misc.php:668
@@ -13036,10 +13036,10 @@ msgstr "Wachtwoord en de wachtwoordbevestiging moeten overeenkomen."
 #: src/usr/local/www/services_captiveportal_vouchers.php:314
 #, php-format
 msgid ""
-"The Captive Portal voucher database has been synchronized with %s (pfsense."
+"The Captive Portal voucher database has been synchronized with %s (murillo."
 "exec_php)."
 msgstr ""
-"De Toegangsportaal Ticket database is gesynchroniseerd met %s (pfsense."
+"De Toegangsportaal Ticket database is gesynchroniseerd met %s (murillo."
 "exec_php)."
 
 #: src/usr/local/www/services_captiveportal_vouchers.php:346
@@ -14309,8 +14309,8 @@ msgstr "Succesvol teruggedraaid naar tijdpunt %1$s met omschrijving \"%2$s\"."
 #: src/usr/local/www/diag_confbak.php:54 src/usr/local/www/diag_confbak.php:62
 #: src/usr/local/www/diag_confbak.php:116
 #: src/usr/local/www/diag_confbak.php:225
-#: src/usr/local/www/diag_confbak.php:236 src/etc/inc/pfsense-utils.inc:516
-#: src/etc/inc/pfsense-utils.inc:526
+#: src/usr/local/www/diag_confbak.php:236 src/etc/inc/murillo-utils.inc:516
+#: src/etc/inc/murillo-utils.inc:526
 msgid "n/j/y H:i:s"
 msgstr "n/j/y H:i:s"
 
@@ -15675,10 +15675,10 @@ msgstr "Een wachtwoord voor decryptie dient te worden opgegeven en bevestigd."
 
 #: src/usr/local/www/diag_backup.php:237
 msgid ""
-"The uploaded file does not appear to contain an encrypted pfsense "
+"The uploaded file does not appear to contain an encrypted murillo "
 "configuration."
 msgstr ""
-"Het geuploade bestand lijkt geen versleutelde pfsense configuratie te "
+"Het geuploade bestand lijkt geen versleutelde murillo configuratie te "
 "bevatten."
 
 #: src/usr/local/www/diag_backup.php:241
@@ -15686,8 +15686,8 @@ msgid "File decryption failed. Incorrect password or file is invalid."
 msgstr ""
 
 #: src/usr/local/www/diag_backup.php:246
-msgid "Upgrading m0n0wall configuration to pfsense."
-msgstr "m0n0wall configuratie naar pfsense aan het upgraden."
+msgid "Upgrading m0n0wall configuration to murillo."
+msgstr "m0n0wall configuratie naar murillo aan het upgraden."
 
 #: src/usr/local/www/diag_backup.php:261 src/usr/local/www/diag_backup.php:264
 msgid ""
@@ -15739,8 +15739,8 @@ msgid "Imported m0n0wall configuration"
 msgstr "De m0n0wall configuratie is geimporteerd"
 
 #: src/usr/local/www/diag_backup.php:391
-msgid "The m0n0wall configuration has been restored and upgraded to pfSense."
-msgstr "De m0n0wall configuratie is hersteld en geupgrade naar pfSense."
+msgid "The m0n0wall configuration has been restored and upgraded to Murillo."
+msgstr "De m0n0wall configuratie is hersteld en geupgrade naar Murillo."
 
 #: src/usr/local/www/diag_backup.php:419
 msgid "The configuration could not be restored."
@@ -17610,7 +17610,7 @@ msgstr "Zowel getURL als XMLHttpRequest zijn ongedefineerd"
 msgid "Switch to bits/s"
 msgstr "Schakel om naar bits/s"
 
-#: src/usr/local/www/graph.php:198 src/etc/inc/pfsense-utils.inc:1790
+#: src/usr/local/www/graph.php:198 src/etc/inc/murillo-utils.inc:1790
 msgid "up"
 msgstr "up"
 
@@ -18173,7 +18173,7 @@ msgstr ""
 
 #: src/usr/local/www/firewall_virtual_ip_edit.php:451
 #, php-format
-msgid "For more information, visit the pfSense book section on %s"
+msgid "For more information, visit the Murillo book section on %s"
 msgstr ""
 
 #: src/usr/local/www/status_logs_filter_dynamic.php:381
@@ -18547,11 +18547,11 @@ msgstr "Primaire Console"
 #: src/usr/local/www/system_advanced_admin.php:706
 msgid ""
 "Select the preferred console if multiple consoles are present. The preferred "
-"console will show pfSense boot script output. All consoles display OS boot "
+"console will show Murillo boot script output. All consoles display OS boot "
 "messages, console messages, and the console menu."
 msgstr ""
 "Selecteer de voorkeur console als meerdere consoles aanwezig zijn. De "
-"voorkeur console zal de uitvoer van het pfSense opstart script tonen. Alle "
+"voorkeur console zal de uitvoer van het Murillo opstart script tonen. Alle "
 "consoles laten de OS opstart berichten, console berichten en het console "
 "menu zien."
 
@@ -22909,7 +22909,7 @@ msgstr ""
 
 #: src/usr/local/www/crash_reporter.php:98
 msgid ""
-"Debugging output can be collected to share with pfSense developers or others "
+"Debugging output can be collected to share with Murillo developers or others "
 "providing support or assistance."
 msgstr ""
 
@@ -23144,12 +23144,12 @@ msgstr "GPS Type"
 #, php-format
 msgid ""
 "This option allows a predefined configuration to be selected. Default is the "
-"configuration of pfSense 2.1 and earlier (not recommended). Select Generic "
+"configuration of Murillo 2.1 and earlier (not recommended). Select Generic "
 "if the GPS is not listed.%1$sThe predefined configurations assume the GPS "
 "has already been set to NMEA mode."
 msgstr ""
 "Deze optie staat toe dat een voorgedefinieerde configuratie kan worden "
-"geselecteerd. Standaard is dit de configuratie van pfSense 2.1 en eerder "
+"geselecteerd. Standaard is dit de configuratie van Murillo 2.1 en eerder "
 "(niet aanbevolen). Selecteer Generiek indien de GPS niet in de lijst "
 "voorkomt..%1$sDe voorgedefinieerde configuraties gaan ervan uit dat de GPS "
 "al is ingesteld op NMEA mode."
@@ -24281,13 +24281,13 @@ msgid ""
 "If enabled no attempts will be made to ensure that the MAC address of "
 "clients stays the same while they are logged in. This is required when the "
 "MAC address of the client cannot be determined (usually because there are "
-"routers between pfSense and the clients). If this is enabled, RADIUS MAC "
+"routers between Murillo and the clients). If this is enabled, RADIUS MAC "
 "authentication cannot be used."
 msgstr ""
 "Indien ingeschakeld zal er geen poging worden gedaan om zeker te stellen dat "
 "het MAC adres van de clients gelijk blijft gedurende de tijd dat ze zijn "
 "ingelogd. Dit is noodzakelijk als het MAC adres van de client niet kan "
-"worden vastgesteld (meestal omdat er routers tussen pfSense en de clients "
+"worden vastgesteld (meestal omdat er routers tussen Murillo en de clients "
 "zitten). Indien dit is ingeschakeld kan RADIUS MAC authenticatie niet worden "
 "gebruikt"
 
@@ -24596,7 +24596,7 @@ msgstr ""
 msgid ""
 "When enabled, clients will be disconnected after exceeding the amount of "
 "traffic, inclusive of both downloads and uploads, retrieved from the RADIUS "
-"pfSense-Max-Total-Octets attribute."
+"Murillo-Max-Total-Octets attribute."
 msgstr ""
 
 #: src/usr/local/www/services_captiveportal.php:960
@@ -24606,7 +24606,7 @@ msgstr ""
 #: src/usr/local/www/services_captiveportal.php:963
 msgid ""
 "When enabled, the bandwidth assigned to a client will be limited to the "
-"values retrieved from the RADIUS pfSense-Bandwidth-Max-Up and pfSense-"
+"values retrieved from the RADIUS Murillo-Bandwidth-Max-Up and Murillo-"
 "Bandwidth-Max-Down attributes or from the comparable WISPr attributes."
 msgstr ""
 
@@ -24716,14 +24716,14 @@ msgid ""
 "match the Common Name (CN) in the certificate (otherwise, the client browser "
 "will most likely display a security warning). Make sure captive portal "
 "clients can resolve this name in DNS and verify on the client that the IP "
-"resolves to the correct interface IP on pfSense."
+"resolves to the correct interface IP on Murillo."
 msgstr ""
 "Deze naam wordt gebruikt in de formulier actie voor de HTTPS POST en moet "
 "overeenkomen met de Algemene Naam (CN) in het certificaat (anders laat de "
 "client waarschijnlijk een beveiligingswaarschuwing zien). Zorg ervoor dart "
 "de Toegangsportaal clients deze naam kunnen herleiden in de  DNS en "
 "controleer in de client dat het IP adres herleidt naar de juiste interface "
-"IP in pfSense."
+"IP in Murillo."
 
 #: src/usr/local/www/services_captiveportal.php:1096
 msgid "*SSL/TLS Certificate"
@@ -24843,8 +24843,8 @@ msgid "Paid Support"
 msgstr "Betaalde Ondersteuning"
 
 #: src/usr/local/www/head.inc:431
-msgid "pfSense Book"
-msgstr "pfSense Boek"
+msgid "Murillo Book"
+msgstr "Murillo Boek"
 
 #: src/usr/local/www/head.inc:432
 msgid "FreeBSD Handbook"
@@ -24941,12 +24941,12 @@ msgstr ""
 "De instellingen kunnen niet worden beheerd voor een niet-lokale gebruiker."
 
 #: src/usr/local/www/system_user_settings.php:65
-#: src/etc/inc/pfsense-utils.inc:225
+#: src/etc/inc/murillo-utils.inc:225
 msgid "Theme"
 msgstr "Thema"
 
 #: src/usr/local/www/system_user_settings.php:65
-#: src/etc/inc/pfsense-utils.inc:304
+#: src/etc/inc/murillo-utils.inc:304
 msgid "Dashboard Columns"
 msgstr "Dashboard Kolommen"
 
@@ -27095,8 +27095,8 @@ msgstr "Verbindingen naar de Upstream SIP Server"
 
 #: src/usr/local/www/wizards/traffic_shaper_wizard_multi_all.inc:1769
 #: src/usr/local/www/wizards/traffic_shaper_wizard_dedicated.inc:1679
-msgid "Shaper configuration saved via pfSense traffic shaper wizard."
-msgstr "Shaper configuratie opgeslagen via de pfSense traffic shaper wizard."
+msgid "Shaper configuration saved via Murillo traffic shaper wizard."
+msgstr "Shaper configuratie opgeslagen via de Murillo traffic shaper wizard."
 
 #: src/usr/local/www/interfaces.php:427
 msgid "The settings have already been applied!"
@@ -30546,11 +30546,11 @@ msgstr "Externe Syslog inhoud"
 msgid ""
 "Syslog sends UDP datagrams to port 514 on the specified remote syslog "
 "server, unless another port is specified. Be sure to set syslogd on the "
-"remote server to accept syslog messages from pfSense."
+"remote server to accept syslog messages from Murillo."
 msgstr ""
 "Syslog stuurt UDP-datagrammen naar poort 514 op de opgegeven externe syslog-"
 "server, tenzij een andere poort is opgegeven. Zorg ervoor dat de syslogd op "
-"de externe server syslog-berichten van pfSense accepteert. "
+"de externe server syslog-berichten van Murillo accepteert. "
 
 #: src/usr/local/www/widgets/include/services_status.inc:24
 msgid "Services Status"
@@ -31605,10 +31605,10 @@ msgstr "Alleen proefdraaien.%1$sEr worden geen bestanden gekopieerd."
 
 #: src/usr/local/www/system_update_settings.php:247
 msgid ""
-"See \"playback gitsync --help\" in console \"PHP Shell + pfSense tools\" for "
+"See \"playback gitsync --help\" in console \"PHP Shell + Murillo tools\" for "
 "additional information."
 msgstr ""
-"Bekijk \"playback gitsync --help\" in console \"PHP Shell + pfSense tools\" "
+"Bekijk \"playback gitsync --help\" in console \"PHP Shell + Murillo tools\" "
 "voor aanvullende informatie."
 
 #: src/usr/local/www/status_graph.php:142
@@ -32389,10 +32389,10 @@ msgstr "Synchroniseren van XMLRPC data naar %s wordt gestart."
 #, php-format
 msgid ""
 "A communications error occurred while attempting XMLRPC sync with %s "
-"(pfsense.%s)."
+"(murillo.%s)."
 msgstr ""
 "Er is een communicatiefout opgetreden bij het synchroniseren van XMLRPC met "
-"%s (pfsense.%s)."
+"%s (murillo.%s)."
 
 #: src/etc/inc/xmlrpc_client.inc:126
 msgid "Error code received"
@@ -32492,11 +32492,11 @@ msgid "PC Engines ALIX"
 msgstr "PC Engines ALIX"
 
 #: src/etc/inc/config.inc:74
-msgid "Upgrading m0n0wall configuration to pfSense... "
-msgstr "Upgraden m0n0wall configuratie naar pfSense... "
+msgid "Upgrading m0n0wall configuration to Murillo... "
+msgstr "Upgraden m0n0wall configuratie naar Murillo... "
 
 #: src/etc/inc/config.inc:77
-msgid "ERROR!  Could not convert m0n0wall -> pfsense in config.xml"
+msgid "ERROR!  Could not convert m0n0wall -> murillo in config.xml"
 msgstr ""
 "Fout!  Kon de m0n0wall configuratie niet converteren naar Pfsense in config."
 "xml"
@@ -33984,7 +33984,7 @@ msgstr ""
 msgid "limiter"
 msgstr "begrenzer"
 
-#: src/etc/inc/pfsense-utils.inc:228
+#: src/etc/inc/murillo-utils.inc:228
 #, php-format
 msgid ""
 "Choose an alternative css file (if installed) to change the appearance of "
@@ -33993,66 +33993,66 @@ msgstr ""
 "Kies een alternatief css bestand (indien geinstalleerd) om het uiterlijk van "
 "de webConfigurator te wijzigen. css bestanden staan in /usr/local/www/css/%s"
 
-#: src/etc/inc/pfsense-utils.inc:233
+#: src/etc/inc/murillo-utils.inc:233
 msgid "The submitted Theme could not be found. Pick a different theme."
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:252
+#: src/etc/inc/murillo-utils.inc:252
 msgid "Scrolls with page"
 msgstr "Scrollt met de pagina"
 
-#: src/etc/inc/pfsense-utils.inc:252
+#: src/etc/inc/murillo-utils.inc:252
 msgid "Fixed (Remains visible at top of page)"
 msgstr "Gefixeerd (Blijft zichtbaar aan de bovenkant van de pagina)"
 
-#: src/etc/inc/pfsense-utils.inc:250
+#: src/etc/inc/murillo-utils.inc:250
 msgid "Top Navigation"
 msgstr "Top Navigatie"
 
-#: src/etc/inc/pfsense-utils.inc:253
+#: src/etc/inc/murillo-utils.inc:253
 msgid "The fixed option is intended for large screens only."
 msgstr "De optie gefixeerd is alleen bedoeld voor grotere schermen."
 
-#: src/etc/inc/pfsense-utils.inc:258
+#: src/etc/inc/murillo-utils.inc:258
 msgid "The submitted Top Navigation value is invalid."
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:277
+#: src/etc/inc/murillo-utils.inc:277
 msgid "Default (No hostname)"
 msgstr "Standaard (geen hostnaam)"
 
-#: src/etc/inc/pfsense-utils.inc:277
+#: src/etc/inc/murillo-utils.inc:277
 msgid "Hostname only"
 msgstr "Alleen een hostnaam"
 
-#: src/etc/inc/pfsense-utils.inc:277
+#: src/etc/inc/murillo-utils.inc:277
 msgid "Fully Qualified Domain Name"
 msgstr "Volledig Domeinnaam (FQDN)"
 
-#: src/etc/inc/pfsense-utils.inc:275
+#: src/etc/inc/murillo-utils.inc:275
 msgid "Hostname in Menu"
 msgstr "Hostnaam in het Menu"
 
-#: src/etc/inc/pfsense-utils.inc:278
+#: src/etc/inc/murillo-utils.inc:278
 msgid ""
 "Replaces the Help menu title in the Navbar with the system hostname or FQDN."
 msgstr ""
 "Vervangt de Help menu titel in de Navigatiebalk met de hostnaam of "
 "domeinnaam van het systeem."
 
-#: src/etc/inc/pfsense-utils.inc:283
+#: src/etc/inc/murillo-utils.inc:283
 msgid "The submitted Hostname in Menu value is invalid."
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:312
+#: src/etc/inc/murillo-utils.inc:312
 msgid "The submitted Dashboard Columns value is invalid."
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:329
+#: src/etc/inc/murillo-utils.inc:329
 msgid "Interfaces Sort"
 msgstr "Sorteer Interfaces"
 
-#: src/etc/inc/pfsense-utils.inc:332
+#: src/etc/inc/murillo-utils.inc:332
 msgid ""
 "If selected, lists of interfaces will be sorted by description, otherwise "
 "they are listed wan,lan,optn..."
@@ -34060,27 +34060,27 @@ msgstr ""
 "Indien geselecteerd zal de lijst met interfaces worden gesorteerd op "
 "omschrijving, anders worden ze weergegeven als wan, lan, optn..."
 
-#: src/etc/inc/pfsense-utils.inc:346
+#: src/etc/inc/murillo-utils.inc:346
 msgid "Associated Panels Show/Hide"
 msgstr "Verwante Panelen Tonen/Verbergen"
 
-#: src/etc/inc/pfsense-utils.inc:353
+#: src/etc/inc/murillo-utils.inc:353
 msgid "Show the Available Widgets panel on the Dashboard."
 msgstr "Toon het beschikbare widgets paneel op het dashboard."
 
-#: src/etc/inc/pfsense-utils.inc:360
+#: src/etc/inc/murillo-utils.inc:360
 msgid "Show the Log Filter panel in System Logs."
 msgstr "Toon het Log Filter paneel in Systeem Logs."
 
-#: src/etc/inc/pfsense-utils.inc:367
+#: src/etc/inc/murillo-utils.inc:367
 msgid "Show the Manage Log panel in System Logs."
 msgstr "Toon het Beheer Log paneel in Systeem Logs."
 
-#: src/etc/inc/pfsense-utils.inc:374
+#: src/etc/inc/murillo-utils.inc:374
 msgid "Show the Settings panel in Status Monitoring."
 msgstr "Toon het Instellingen paneel in Status Monitoring."
 
-#: src/etc/inc/pfsense-utils.inc:376
+#: src/etc/inc/murillo-utils.inc:376
 msgid ""
 "These options allow certain panels to be automatically hidden on page load. "
 "A control is provided in the title bar to un-hide the panel."
@@ -34089,11 +34089,11 @@ msgstr ""
 "van de pagina. Er is een knop beschikbaar in de titelbalk om het paneel te "
 "tonen."
 
-#: src/etc/inc/pfsense-utils.inc:394
+#: src/etc/inc/murillo-utils.inc:394
 msgid "Left Column Labels"
 msgstr "Linker Kolom Titels"
 
-#: src/etc/inc/pfsense-utils.inc:397
+#: src/etc/inc/murillo-utils.inc:397
 msgid ""
 "If selected, clicking a label in the left column will select/toggle the "
 "first item of the group."
@@ -34101,11 +34101,11 @@ msgstr ""
 "Indien geselecteerd zal bij het klikken op een titel in de linker kolom het "
 "eerste item van de groep worden geselecteerd/omgezet."
 
-#: src/etc/inc/pfsense-utils.inc:413
+#: src/etc/inc/murillo-utils.inc:413
 msgid "Alias Popups"
 msgstr "Alias Popups"
 
-#: src/etc/inc/pfsense-utils.inc:416
+#: src/etc/inc/murillo-utils.inc:416
 msgid ""
 "If selected, the details in alias popups will not be shown, just the alias "
 "description (e.g. in Firewall Rules)."
@@ -34113,11 +34113,11 @@ msgstr ""
 "Indien geselecteerd zullen de details in de alias popup niet getoond worden, "
 "alleen de alias omschrijving (b.v. Firewall Regels)."
 
-#: src/etc/inc/pfsense-utils.inc:432
+#: src/etc/inc/murillo-utils.inc:432
 msgid "Browser tab text"
 msgstr "Browser tab tekst"
 
-#: src/etc/inc/pfsense-utils.inc:435
+#: src/etc/inc/murillo-utils.inc:435
 msgid ""
 "When this is unchecked, the browser tab shows the host name followed by the "
 "current page. Check this box to display the current page followed by the "
@@ -34127,11 +34127,11 @@ msgstr ""
 "daarna de huidige pagina weergeven. Vink dit aan om eerst de huidige pagina "
 "en daarna de hostnaam weer te geven."
 
-#: src/etc/inc/pfsense-utils.inc:479
+#: src/etc/inc/murillo-utils.inc:479
 msgid "Require State Filter"
 msgstr "Vereis State Filter"
 
-#: src/etc/inc/pfsense-utils.inc:482
+#: src/etc/inc/murillo-utils.inc:482
 msgid ""
 "By default, the entire state table is displayed when entering Diagnostics > "
 "States. This option requires a filter to be entered before the states are "
@@ -34142,136 +34142,136 @@ msgstr ""
 "voordat de states worden weergegeven. Nuttig voor systemen met hele grote "
 "state tabellen."
 
-#: src/etc/inc/pfsense-utils.inc:502
+#: src/etc/inc/murillo-utils.inc:502
 msgid "Rule Information"
 msgstr "Regel Informatie"
 
-#: src/etc/inc/pfsense-utils.inc:506
+#: src/etc/inc/murillo-utils.inc:506
 msgid "Tracking ID"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:515 src/etc/inc/pfsense-utils.inc:525
+#: src/etc/inc/murillo-utils.inc:515 src/etc/inc/murillo-utils.inc:525
 #, php-format
 msgid "%1$s by %2$s"
 msgstr "%1$s bij %2$s"
 
-#: src/etc/inc/pfsense-utils.inc:513
+#: src/etc/inc/murillo-utils.inc:513
 msgid "Created"
 msgstr "Aangemaakt"
 
-#: src/etc/inc/pfsense-utils.inc:523
+#: src/etc/inc/murillo-utils.inc:523
 msgid "Updated"
 msgstr "Bijgewerkt"
 
-#: src/etc/inc/pfsense-utils.inc:819
+#: src/etc/inc/murillo-utils.inc:819
 msgid "After synch increase advertising skew"
 msgstr "Na synchronisatie de advertising skew verhogen"
 
-#: src/etc/inc/pfsense-utils.inc:869
+#: src/etc/inc/murillo-utils.inc:869
 msgid "Error creating socket!"
 msgstr "Fout bij het aanmaken van de socket!"
 
-#: src/etc/inc/pfsense-utils.inc:870
+#: src/etc/inc/murillo-utils.inc:870
 #, php-format
 msgid "Error code is '%1$s' - %2$s"
 msgstr "Foutcode is '%1$s' - %2$s"
 
-#: src/etc/inc/pfsense-utils.inc:875
+#: src/etc/inc/murillo-utils.inc:875
 #, php-format
 msgid "setsockopt() failed, error: %s"
 msgstr "setsockopt() mislukt, fout: %s"
 
-#: src/etc/inc/pfsense-utils.inc:879
+#: src/etc/inc/murillo-utils.inc:879
 #, php-format
 msgid "Magic Packet sent (%1$s) to (%2$s) MAC=%3$s"
 msgstr "Magisch Pakket verstuurd (%1$s) naar (%2$s) MAC=%3$s"
 
-#: src/etc/inc/pfsense-utils.inc:961 src/etc/inc/pfsense-utils.inc:981
+#: src/etc/inc/murillo-utils.inc:961 src/etc/inc/murillo-utils.inc:981
 #, php-format
 msgid "Restored %s of config file (maybe from CARP partner)"
 msgstr "%s hersteld uit de config file (mogelijk van CARP partner)"
 
-#: src/etc/inc/pfsense-utils.inc:1068
+#: src/etc/inc/murillo-utils.inc:1068
 msgid "reload_interfaces_sync() is starting."
 msgstr "reload_interfaces_sync() is aan het starten."
 
-#: src/etc/inc/pfsense-utils.inc:1077
+#: src/etc/inc/murillo-utils.inc:1077
 msgid "Enabling system routing"
 msgstr "System routering inschakelen"
 
-#: src/etc/inc/pfsense-utils.inc:1081
+#: src/etc/inc/murillo-utils.inc:1081
 msgid "Cleaning up Interfaces"
 msgstr "Opschonen van Interfaces"
 
-#: src/etc/inc/pfsense-utils.inc:1587
+#: src/etc/inc/murillo-utils.inc:1587
 msgid "No history data found!"
 msgstr "Geen historische data gevonden!"
 
-#: src/etc/inc/pfsense-utils.inc:1720
+#: src/etc/inc/murillo-utils.inc:1720
 msgid "device not present! Is the modem attached to the system?"
 msgstr "apparaat niet aanwezig! Is de modem aangesloten op het systeem?"
 
-#: src/etc/inc/pfsense-utils.inc:1789
+#: src/etc/inc/murillo-utils.inc:1789
 msgid "running"
 msgstr "draaiend"
 
-#: src/etc/inc/pfsense-utils.inc:1835
+#: src/etc/inc/murillo-utils.inc:1835
 msgid "blocking"
 msgstr "blokkerend"
 
-#: src/etc/inc/pfsense-utils.inc:1835
+#: src/etc/inc/murillo-utils.inc:1835
 msgid "check for ethernet loops"
 msgstr "controleer op ethernet lussen"
 
-#: src/etc/inc/pfsense-utils.inc:1838
+#: src/etc/inc/murillo-utils.inc:1838
 msgid "learning"
 msgstr "lerend"
 
-#: src/etc/inc/pfsense-utils.inc:1841
+#: src/etc/inc/murillo-utils.inc:1841
 msgid "forwarding"
 msgstr "doorsturen"
 
-#: src/etc/inc/pfsense-utils.inc:1988
+#: src/etc/inc/murillo-utils.inc:1988
 #, php-format
 msgid "DNSCACHE: Found old IP %1$s and new IP %2$s"
 msgstr "DNSCACHE: Oud IP %1$s en nieuw IP %2$s gevonden"
 
-#: src/etc/inc/pfsense-utils.inc:2010
+#: src/etc/inc/murillo-utils.inc:2010
 #, php-format
 msgid "Loading %s cryptographic accelerator module."
 msgstr "Laden van %s cryptografische acceleratiemodule."
 
-#: src/etc/inc/pfsense-utils.inc:2028
+#: src/etc/inc/murillo-utils.inc:2028
 #, php-format
 msgid "Loading %s thermal monitor module."
 msgstr "Laden van %s temperatuur monitoring module."
 
-#: src/etc/inc/pfsense-utils.inc:2105 src/etc/inc/pfsense-utils.inc:2161
+#: src/etc/inc/murillo-utils.inc:2105 src/etc/inc/murillo-utils.inc:2161
 #, php-format
 msgid "Download file failed with status code %1$s. URL: %2$s"
 msgstr "Ophalen van bestand mislukt met status code %1$s. URL: %2$s"
 
-#: src/etc/inc/pfsense-utils.inc:2380
+#: src/etc/inc/murillo-utils.inc:2380
 #, php-format
 msgid "Could not process non-existent file from alias: %s"
 msgstr "Kon het niet-bestaande bestand niet verwerken van alias: %s"
 
-#: src/etc/inc/pfsense-utils.inc:2385
+#: src/etc/inc/murillo-utils.inc:2385
 #, php-format
 msgid "Could not process empty file from alias: %s"
 msgstr "Kon het lege bestand niet verwerken van alias: %s"
 
-#: src/etc/inc/pfsense-utils.inc:2390
+#: src/etc/inc/murillo-utils.inc:2390
 #, php-format
 msgid "Could not process aliases from alias: %s"
 msgstr "Kon aliasen niet verwerken van alias: %s"
 
-#: src/etc/inc/pfsense-utils.inc:2470
+#: src/etc/inc/murillo-utils.inc:2470
 #, php-format
 msgid "Failed to download alias %s"
 msgstr "Ophalen mislukt van alias %s"
 
-#: src/etc/inc/pfsense-utils.inc:2499
+#: src/etc/inc/murillo-utils.inc:2499
 msgid ""
 "Alias archive is a .tar/tgz file which cannot be decompressed because "
 "utility is missing!"
@@ -34279,170 +34279,170 @@ msgstr ""
 "Alias archief is een .tar/tgz bestand en kon niet worden uitgepakt omdat het "
 "programma mist!"
 
-#: src/etc/inc/pfsense-utils.inc:2509
+#: src/etc/inc/murillo-utils.inc:2509
 #, php-format
 msgid "Could not open %s/aliases for writing!"
 msgstr "Kon %s/aliasen niet openen om te schrijven!"
 
-#: src/etc/inc/pfsense-utils.inc:2515
+#: src/etc/inc/murillo-utils.inc:2515
 #, php-format
 msgid "The following file could not be read %1$s from %2$s"
 msgstr "Het volgende bestand kon niet gelezen worden %1$s van %2$s"
 
-#: src/etc/inc/pfsense-utils.inc:3118
+#: src/etc/inc/murillo-utils.inc:3118
 msgid "Bosnian"
 msgstr "Bosnisch"
 
-#: src/etc/inc/pfsense-utils.inc:3119
+#: src/etc/inc/murillo-utils.inc:3119
 msgid "Chinese"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3120
+#: src/etc/inc/murillo-utils.inc:3120
 msgid "Chinese (Simplified, China)"
 msgstr "Chinees (Eenvoudig, China)"
 
-#: src/etc/inc/pfsense-utils.inc:3121
+#: src/etc/inc/murillo-utils.inc:3121
 msgid "Chinese (Simplified, Hong Kong SAR China)"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3122
+#: src/etc/inc/murillo-utils.inc:3122
 msgid "Chinese (Traditional, Taiwan)"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3123
+#: src/etc/inc/murillo-utils.inc:3123
 msgid "Dutch"
 msgstr "Nederlands"
 
-#: src/etc/inc/pfsense-utils.inc:3124
+#: src/etc/inc/murillo-utils.inc:3124
 msgid "English"
 msgstr "Engels"
 
-#: src/etc/inc/pfsense-utils.inc:3125
+#: src/etc/inc/murillo-utils.inc:3125
 msgid "French"
 msgstr "Frans"
 
-#: src/etc/inc/pfsense-utils.inc:3126
+#: src/etc/inc/murillo-utils.inc:3126
 msgid "German (Germany)"
 msgstr "Duits (Duitsland)"
 
-#: src/etc/inc/pfsense-utils.inc:3127
+#: src/etc/inc/murillo-utils.inc:3127
 msgid "Italian"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3128
+#: src/etc/inc/murillo-utils.inc:3128
 msgid "Korean"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3129
+#: src/etc/inc/murillo-utils.inc:3129
 msgid "Norwegian Bokmål"
 msgstr "Noorweegse Bokmål"
 
-#: src/etc/inc/pfsense-utils.inc:3130
+#: src/etc/inc/murillo-utils.inc:3130
 msgid "Polish"
 msgstr "Pools"
 
-#: src/etc/inc/pfsense-utils.inc:3131
+#: src/etc/inc/murillo-utils.inc:3131
 msgid "Portuguese"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3132
+#: src/etc/inc/murillo-utils.inc:3132
 msgid "Portuguese (Brazil)"
 msgstr "Portugees (Braziliaans)"
 
-#: src/etc/inc/pfsense-utils.inc:3133
+#: src/etc/inc/murillo-utils.inc:3133
 msgid "Russian"
 msgstr "Russich"
 
-#: src/etc/inc/pfsense-utils.inc:3134
+#: src/etc/inc/murillo-utils.inc:3134
 msgid "Spanish"
 msgstr "Spaans"
 
-#: src/etc/inc/pfsense-utils.inc:3135
+#: src/etc/inc/murillo-utils.inc:3135
 msgid "Spanish (Argentina)"
 msgstr "Spaans (Argentinie)"
 
-#: src/etc/inc/pfsense-utils.inc:3330 src/etc/inc/pfsense-utils.inc:3345
-#: src/etc/inc/pfsense-utils.inc:3371
+#: src/etc/inc/murillo-utils.inc:3330 src/etc/inc/murillo-utils.inc:3345
+#: src/etc/inc/murillo-utils.inc:3371
 msgid "No Service"
 msgstr "Geen Service"
 
-#: src/etc/inc/pfsense-utils.inc:3346
+#: src/etc/inc/murillo-utils.inc:3346
 msgid "Restricted Service"
 msgstr "Beperkte Service"
 
-#: src/etc/inc/pfsense-utils.inc:3347
+#: src/etc/inc/murillo-utils.inc:3347
 msgid "Valid Service"
 msgstr "Geldige Service"
 
-#: src/etc/inc/pfsense-utils.inc:3348
+#: src/etc/inc/murillo-utils.inc:3348
 msgid "Restricted Regional Service"
 msgstr "Beperkte Regionale Service"
 
-#: src/etc/inc/pfsense-utils.inc:3349
+#: src/etc/inc/murillo-utils.inc:3349
 msgid "Powersaving Service"
 msgstr "Zuinige Service"
 
-#: src/etc/inc/pfsense-utils.inc:3350
+#: src/etc/inc/murillo-utils.inc:3350
 msgid "Unknown Service"
 msgstr "Onbekende Service"
 
-#: src/etc/inc/pfsense-utils.inc:3356
+#: src/etc/inc/murillo-utils.inc:3356
 msgid "Invalid SIM/locked State"
 msgstr "Ongeldige SIM/vergrendeld Status"
 
-#: src/etc/inc/pfsense-utils.inc:3357
+#: src/etc/inc/murillo-utils.inc:3357
 msgid "Valid SIM State"
 msgstr "Geldige SIM Status"
 
-#: src/etc/inc/pfsense-utils.inc:3358
+#: src/etc/inc/murillo-utils.inc:3358
 msgid "Invalid SIM CS State"
 msgstr "Ongeldige SIM CS Status"
 
-#: src/etc/inc/pfsense-utils.inc:3359
+#: src/etc/inc/murillo-utils.inc:3359
 msgid "Invalid SIM PS State"
 msgstr "Ongeldige SIM PS Status"
 
-#: src/etc/inc/pfsense-utils.inc:3360
+#: src/etc/inc/murillo-utils.inc:3360
 msgid "Invalid SIM CS/PS State"
 msgstr "Ongeldige SIM CS/PS Status"
 
-#: src/etc/inc/pfsense-utils.inc:3361
+#: src/etc/inc/murillo-utils.inc:3361
 msgid "Missing SIM State"
 msgstr "Ontbrekende SIM Status"
 
-#: src/etc/inc/pfsense-utils.inc:3372
+#: src/etc/inc/murillo-utils.inc:3372
 msgid "Limited Service"
 msgstr "Beperkte Service"
 
-#: src/etc/inc/pfsense-utils.inc:3388
+#: src/etc/inc/murillo-utils.inc:3388
 msgid "Initializing Service"
 msgstr "Initializeren van Service"
 
-#: src/etc/inc/pfsense-utils.inc:3389
+#: src/etc/inc/murillo-utils.inc:3389
 msgid "Network Lock error Service"
 msgstr "Netwerk Vergrendeld fout Service"
 
-#: src/etc/inc/pfsense-utils.inc:3390
+#: src/etc/inc/murillo-utils.inc:3390
 msgid "Network Locked Service"
 msgstr "Netwerk Vergrendeld Service"
 
-#: src/etc/inc/pfsense-utils.inc:3391
+#: src/etc/inc/murillo-utils.inc:3391
 msgid "Unlocked or correct MCC/MNC Service"
 msgstr "Ontgrendeld of correcte MCC/MNC Service"
 
-#: src/etc/inc/pfsense-utils.inc:3397
+#: src/etc/inc/murillo-utils.inc:3397
 msgid "No action State"
 msgstr "Geen actie Status"
 
-#: src/etc/inc/pfsense-utils.inc:3398
+#: src/etc/inc/murillo-utils.inc:3398
 msgid "Network lock State"
 msgstr "Netwerk vergendelstatus"
 
-#: src/etc/inc/pfsense-utils.inc:3399
+#: src/etc/inc/murillo-utils.inc:3399
 msgid "(U)SIM card lock State"
 msgstr "(U)SIM kaart vergrendelstatus"
 
-#: src/etc/inc/pfsense-utils.inc:3400
+#: src/etc/inc/murillo-utils.inc:3400
 msgid "Network Lock and (U)SIM card Lock State"
 msgstr "Netwerk Vergrendel en (U)SIM kaart vergrendel Status"
 
@@ -35370,7 +35370,7 @@ msgid "Login to %1$s"
 msgstr "Inloggen op %1$s"
 
 #: src/etc/inc/authgui.inc:273
-msgid "pfSense - Login"
+msgid "Murillo - Login"
 msgstr ""
 
 #: src/etc/inc/authgui.inc:332
@@ -35874,8 +35874,8 @@ msgid "WebCfg - Crash reporter"
 msgstr "WebCfg - Crash Reporter"
 
 #: src/etc/inc/priv.defs.inc:25
-msgid "Uploads crash reports to pfSense and or deletes crash reports."
-msgstr "Stuur crash rapporten naar pfSense en/of verwijder crash rapporten."
+msgid "Uploads crash reports to Murillo and or deletes crash reports."
+msgstr "Stuur crash rapporten naar Murillo en/of verwijder crash rapporten."
 
 #: src/etc/inc/priv.defs.inc:30
 msgid "WebCfg - Diagnostics: ARP Table"
@@ -37627,12 +37627,12 @@ msgid "Allow access to the 'OpenVPN: Servers' page."
 msgstr "Sta toegang toe tot de 'OpenVPN: Servers' pagina."
 
 #: src/etc/inc/priv.defs.inc:1313
-msgid "WebCfg - pfSense wizard subsystem"
-msgstr "WebCfg - pfSense wizard subsysteem"
+msgid "WebCfg - Murillo wizard subsystem"
+msgstr "WebCfg - Murillo wizard subsysteem"
 
 #: src/etc/inc/priv.defs.inc:1314
-msgid "Allow access to the 'pfSense wizard subsystem' page."
-msgstr "Sta toegang toe tot de 'pfSense wizard subsysteem' pagina."
+msgid "Allow access to the 'Murillo wizard subsystem' page."
+msgstr "Sta toegang toe tot de 'Murillo wizard subsysteem' pagina."
 
 #: src/etc/inc/priv.defs.inc:1319
 msgid "WebCfg - XMLRPC Library"
@@ -39070,12 +39070,12 @@ msgid ""
 "\t\t\t\t\t<p align=\"center\"><strong>NO COMMERCIAL DISTRIBUTION OF THE "
 "PFSENSE&reg; CE SOFTWARE IS ALLOWED.</strong>\n"
 "\t\t\t\t\t</p>\n"
-"\t\t\t\t\t<p>pfSense&reg; is a federally and internationally registered "
+"\t\t\t\t\t<p>Murillo&reg; is a federally and internationally registered "
 "trademark and service mark of ESF, and is exclusively licensed to Rubicon "
 "Communications, LLC (d/b/a Netgate) (\"Netgate\").</p>\n"
-"\t\t\t\t\t<p>Any unauthorized use of the pfSense&reg; mark is prohibited by "
+"\t\t\t\t\t<p>Any unauthorized use of the Murillo&reg; mark is prohibited by "
 "United States and international law. Please refer to the Netgate <a href="
-"\"https://www.pfsense.org/trademarks.html\" target=\"_blank\"> Trademark "
+"\"https://www.murillo.org/trademarks.html\" target=\"_blank\"> Trademark "
 "Usage Guidelines</a> for how to properly use the mark.</p>\n"
 "\t\t\t\t\t</div>\n"
 "\t\t\t\t\t<div class=\"modal-footer\" style=\"background-color:#1e3f75; "
@@ -39823,10 +39823,10 @@ msgstr "Schakel deze statische route uit."
 
 #: src/usr/local/www/system_usermanager_settings.php:242
 msgid ""
-"<span id=\"ldaptestop\">Testing pfSense LDAP settings... One moment please..."
+"<span id=\"ldaptestop\">Testing Murillo LDAP settings... One moment please..."
 ""
 msgstr ""
-"<span id=\"ldaptestop\">Test de pfSense LDAP instellingen... even geduld "
+"<span id=\"ldaptestop\">Test de Murillo LDAP instellingen... even geduld "
 "alstublieft..."
 
 #: src/usr/local/www/services_ntpd_pps.php:129
@@ -40837,12 +40837,12 @@ msgid "Use RADIUS Session-Timeout attributes"
 msgstr "RADIUS Sessie-Time-out attributen gebruiken"
 
 #: src/usr/local/www/services_captiveportal.php:954
-msgid "Use RADIUS pfSense-Max-Total-Octets attribute"
+msgid "Use RADIUS Murillo-Max-Total-Octets attribute"
 msgstr ""
 
 #: src/usr/local/www/services_captiveportal.php:961
 msgid ""
-"Use RADIUS pfSense-Bandwidth-Max-Up and pfSense-Bandwidth-Max-Down "
+"Use RADIUS Murillo-Bandwidth-Max-Up and Murillo-Bandwidth-Max-Down "
 "attributes"
 msgstr ""
 
@@ -41099,8 +41099,8 @@ msgid "FreeBSD default"
 msgstr "FreeBSD standaard"
 
 #: src/usr/local/www/interfaces.php:2199
-msgid "pfSense Default"
-msgstr "pfSense standaard"
+msgid "Murillo Default"
+msgstr "Murillo standaard"
 
 #: src/usr/local/www/interfaces.php:2207
 msgid "Saved Cfg"
@@ -41505,26 +41505,26 @@ msgstr ""
 msgid "Enable this queue"
 msgstr "Schakel deze wachtrij in"
 
-#: src/etc/inc/pfsense-utils.inc:330
+#: src/etc/inc/murillo-utils.inc:330
 msgid "Sort Alphabetically"
 msgstr "Alfabetisch Sorteren "
 
-#: src/etc/inc/pfsense-utils.inc:365
+#: src/etc/inc/murillo-utils.inc:365
 msgid "Manage Log"
 msgstr "Beheer log"
 
-#: src/etc/inc/pfsense-utils.inc:372
+#: src/etc/inc/murillo-utils.inc:372
 msgid "Monitoring Settings"
 msgstr "Monitorinstellingen"
 
-#: src/etc/inc/pfsense-utils.inc:414
+#: src/etc/inc/murillo-utils.inc:414
 msgid "Disable details in alias popups"
 msgstr "Details uitschakelen in alias popups"
 
-#: src/etc/inc/pfsense-utils.inc:433
+#: src/etc/inc/murillo-utils.inc:433
 msgid "Display page name first in browser tab"
 msgstr "Toon  eerst pagina naam in browser tabblad"
 
-#: src/etc/inc/pfsense-utils.inc:480
+#: src/etc/inc/murillo-utils.inc:480
 msgid "Do not display state table without a filter"
 msgstr "Laat de state tabel niet zien zonder een filter"

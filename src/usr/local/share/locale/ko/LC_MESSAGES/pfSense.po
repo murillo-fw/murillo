@@ -2249,7 +2249,7 @@ msgstr "이름"
 #: src/usr/local/www/interfaces.php:920 src/usr/local/www/interfaces.php:3147
 #: src/usr/local/www/load_balancer_virtual_server_edit.php:65
 #: src/usr/local/www/load_balancer_virtual_server_edit.php:70
-#: src/etc/inc/pfsense-utils.inc:3340 src/etc/inc/pfsense-utils.inc:3383
+#: src/etc/inc/murillo-utils.inc:3340 src/etc/inc/murillo-utils.inc:3383
 msgid "Mode"
 msgstr "모드"
 
@@ -4176,8 +4176,8 @@ msgstr ""
 #: src/usr/local/www/interfaces.php:1769 src/usr/local/www/interfaces.php:1770
 #: src/usr/local/www/interfaces.php:1796 src/usr/local/www/interfaces.php:1809
 #: src/etc/inc/ipsec.inc:460 src/etc/inc/shaper.inc:4317
-#: src/etc/inc/shaper.inc:4762 src/etc/inc/pfsense-utils.inc:2848
-#: src/etc/inc/pfsense-utils.inc:3322
+#: src/etc/inc/shaper.inc:4762 src/etc/inc/murillo-utils.inc:2848
+#: src/etc/inc/murillo-utils.inc:3322
 msgid "None"
 msgstr "None"
 
@@ -4352,7 +4352,7 @@ msgstr "DHCPv6를 통해 사용 가능한  stateless autoconfig 및 기타 구�
 
 #: src/usr/local/www/services_router_advertisements.php:123
 msgid ""
-"It is not required to activate DHCPv6 server on pfSense when set to "
+"It is not required to activate DHCPv6 server on Murillo when set to "
 "\"Managed\", \"Assisted\" or \"Stateless DHCP\", it can be another host on "
 "the network."
 msgstr ""
@@ -4740,7 +4740,7 @@ msgstr "필터 적용"
 #: src/usr/local/www/status_logs_vpn.php:447
 #: src/usr/local/www/status_logs_common.inc:288
 #: src/usr/local/www/status_logs_common.inc:508
-#: src/etc/inc/pfsense-utils.inc:358
+#: src/etc/inc/murillo-utils.inc:358
 msgid "Log Filter"
 msgstr "로그 필터"
 
@@ -5465,7 +5465,7 @@ msgstr "마법사를 건너 뛰려면 초기 페이지에서 %s 로고를 클릭
 msgid "Dashboard"
 msgstr "대시보드"
 
-#: src/usr/local/www/index.php:338 src/etc/inc/pfsense-utils.inc:351
+#: src/usr/local/www/index.php:338 src/etc/inc/murillo-utils.inc:351
 msgid "Available Widgets"
 msgstr "사용 가능한 위젯"
 
@@ -8302,11 +8302,11 @@ msgstr "*시스템 도메인 로컬 영역 유형"
 
 #: src/usr/local/www/services_unbound.php:393
 msgid ""
-"The local-zone type used for the pfSense system domain (System | General "
+"The local-zone type used for the Murillo system domain (System | General "
 "Setup | Domain).  Transparent is the default.  Local-Zone type descriptions "
 "are available in the unbound.conf(5) manual pages."
 msgstr ""
-"pfSense 시스템 도메인에 사용되는 로컬 영역 유형 (시스템 | 일반 설정 | 도메인). 투명성은 기본값입니다. 로컬 영역 유형 "
+"Murillo 시스템 도메인에 사용되는 로컬 영역 유형 (시스템 | 일반 설정 | 도메인). 투명성은 기본값입니다. 로컬 영역 유형 "
 "설명은 Unbound.conf(5) 설명서 페이지에서 사용할 수 있습니다."
 
 #: src/usr/local/www/services_unbound.php:397
@@ -8615,7 +8615,7 @@ msgstr "주소"
 
 #: src/usr/local/www/status_lb_vs.php:95
 #: src/usr/local/www/widgets/widgets/load_balancer_status.widget.php:66
-#: src/etc/inc/pfsense-utils.inc:395
+#: src/etc/inc/murillo-utils.inc:395
 msgid "Active"
 msgstr "활성의"
 
@@ -9051,8 +9051,8 @@ msgstr "여기에 X.509 PEM 형식으로 인증서 서명 요청을 붙여넣습
 #: src/usr/local/www/system_certmanager.php:710
 msgid ""
 "Optionally paste a private key here. The key will be associated with the "
-"newly signed certificate in pfSense"
-msgstr "선택적으로 개인 키를 여기에 붙여 넣습니다. 키는 pfSense에서 새로 서명된 인증서와 연결됩니다."
+"newly signed certificate in Murillo"
+msgstr "선택적으로 개인 키를 여기에 붙여 넣습니다. 키는 Murillo에서 새로 서명된 인증서와 연결됩니다."
 
 #: src/usr/local/www/system_certmanager.php:714
 msgid "*Certificate Lifetime (days)"
@@ -9606,8 +9606,8 @@ msgid "Could not parse %1$s/wizards/%2$s file."
 msgstr "%1$s/wizards/%2$s 파일을 구문 분석(parse)할 수 없습니다."
 
 #: src/usr/local/www/wizard.php:117
-msgid "Configuration changed via the pfSense wizard subsystem."
-msgstr "pfSense 마법사 하위 시스템을 통해 구성이 변경되었습니다."
+msgid "Configuration changed via the Murillo wizard subsystem."
+msgstr "Murillo 마법사 하위 시스템을 통해 구성이 변경되었습니다."
 
 #: src/usr/local/www/wizard.php:215
 msgid "Wizard"
@@ -11009,9 +11009,9 @@ msgstr "Netgate 장치 ID"
 
 #: src/usr/local/www/system_advanced_misc.php:662
 msgid ""
-"Enable this option to not send Netgate Device ID to pfSense as part of User-"
+"Enable this option to not send Netgate Device ID to Murillo as part of User-"
 "Agent header."
-msgstr "사용자-에이전트 헤더의 일부로 Netgate 장치 ID를 pfSense로 보내지 않으려면 이 옵션을 실행하십시오.로"
+msgstr "사용자-에이전트 헤더의 일부로 Netgate 장치 ID를 Murillo로 보내지 않으려면 이 옵션을 실행하십시오.로"
 
 #: src/usr/local/www/system_advanced_misc.php:668
 msgid ""
@@ -12431,9 +12431,9 @@ msgstr "비밀번호와 확인된 비밀번호가 일치해야 합니다."
 #: src/usr/local/www/services_captiveportal_vouchers.php:314
 #, php-format
 msgid ""
-"The Captive Portal voucher database has been synchronized with %s (pfsense."
+"The Captive Portal voucher database has been synchronized with %s (murillo."
 "exec_php)."
-msgstr "Captive Portal 바우처 데이터베이스가 %s(pfSense)과(와) 동기화되었습니다.exec_php."
+msgstr "Captive Portal 바우처 데이터베이스가 %s(Murillo)과(와) 동기화되었습니다.exec_php."
 
 #: src/usr/local/www/services_captiveportal_vouchers.php:346
 #, php-format
@@ -13616,8 +13616,8 @@ msgstr "성공적으로 \"%2$s\"이라는 설명이 포함된 %1$s 시간 스탬
 #: src/usr/local/www/diag_confbak.php:54 src/usr/local/www/diag_confbak.php:62
 #: src/usr/local/www/diag_confbak.php:116
 #: src/usr/local/www/diag_confbak.php:225
-#: src/usr/local/www/diag_confbak.php:236 src/etc/inc/pfsense-utils.inc:516
-#: src/etc/inc/pfsense-utils.inc:526
+#: src/usr/local/www/diag_confbak.php:236 src/etc/inc/murillo-utils.inc:516
+#: src/etc/inc/murillo-utils.inc:526
 msgid "n/j/y H:i:s"
 msgstr "n/j/y H:i:s"
 
@@ -14870,17 +14870,17 @@ msgstr "암호 해독을 위한 암호를 제공하고 확인해야 합니다."
 
 #: src/usr/local/www/diag_backup.php:237
 msgid ""
-"The uploaded file does not appear to contain an encrypted pfsense "
+"The uploaded file does not appear to contain an encrypted murillo "
 "configuration."
-msgstr "업로드한 파일에 암호화된 pfSense 구성이 없는 것 같습니다."
+msgstr "업로드한 파일에 암호화된 Murillo 구성이 없는 것 같습니다."
 
 #: src/usr/local/www/diag_backup.php:241
 msgid "File decryption failed. Incorrect password or file is invalid."
 msgstr ""
 
 #: src/usr/local/www/diag_backup.php:246
-msgid "Upgrading m0n0wall configuration to pfsense."
-msgstr "m0n0wall 구성을 pfSense로 업그레이드 중입니다."
+msgid "Upgrading m0n0wall configuration to murillo."
+msgstr "m0n0wall 구성을 Murillo로 업그레이드 중입니다."
 
 #: src/usr/local/www/diag_backup.php:261 src/usr/local/www/diag_backup.php:264
 msgid ""
@@ -14923,8 +14923,8 @@ msgid "Imported m0n0wall configuration"
 msgstr "m0n0wall 구성을 가져왔습니다."
 
 #: src/usr/local/www/diag_backup.php:391
-msgid "The m0n0wall configuration has been restored and upgraded to pfSense."
-msgstr "m0n0wall 구성이 복원되어 pfSense로 업그레이드되었습니다."
+msgid "The m0n0wall configuration has been restored and upgraded to Murillo."
+msgstr "m0n0wall 구성이 복원되어 Murillo로 업그레이드되었습니다."
 
 #: src/usr/local/www/diag_backup.php:419
 msgid "The configuration could not be restored."
@@ -16649,7 +16649,7 @@ msgstr "GetURL 및 XMLHttpRequest가 모두 정의되지 않았습니다."
 msgid "Switch to bits/s"
 msgstr "비트/s로 전환"
 
-#: src/usr/local/www/graph.php:198 src/etc/inc/pfsense-utils.inc:1790
+#: src/usr/local/www/graph.php:198 src/etc/inc/murillo-utils.inc:1790
 msgid "up"
 msgstr "위로"
 
@@ -17183,7 +17183,7 @@ msgstr ""
 
 #: src/usr/local/www/firewall_virtual_ip_edit.php:451
 #, php-format
-msgid "For more information, visit the pfSense book section on %s"
+msgid "For more information, visit the Murillo book section on %s"
 msgstr ""
 
 #: src/usr/local/www/status_logs_filter_dynamic.php:381
@@ -17540,10 +17540,10 @@ msgstr "기본 콘솔"
 #: src/usr/local/www/system_advanced_admin.php:706
 msgid ""
 "Select the preferred console if multiple consoles are present. The preferred "
-"console will show pfSense boot script output. All consoles display OS boot "
+"console will show Murillo boot script output. All consoles display OS boot "
 "messages, console messages, and the console menu."
 msgstr ""
-"여러 개의 콘솔이 있는 경우 기본 콘솔을 선택합니다. 기본 콘솔에서 pfSense 부트 스크립트 출력을 표시합니다. 모든 콘솔에는 OS "
+"여러 개의 콘솔이 있는 경우 기본 콘솔을 선택합니다. 기본 콘솔에서 Murillo 부트 스크립트 출력을 표시합니다. 모든 콘솔에는 OS "
 "부팅 메시지, 콘솔 메시지 및 콘솔 메뉴가 표시됩니다."
 
 #: src/usr/local/www/system_advanced_admin.php:712
@@ -21576,9 +21576,9 @@ msgstr "방화벽에 오류가 발생했습니다."
 
 #: src/usr/local/www/crash_reporter.php:98
 msgid ""
-"Debugging output can be collected to share with pfSense developers or others "
+"Debugging output can be collected to share with Murillo developers or others "
 "providing support or assistance."
-msgstr "디버깅 출력은 pfSense 개발자 또는 어시스턴트 또는 지원을 제공하는 다른 사용자와 공유하기 위해 수집할 수 있습니다."
+msgstr "디버깅 출력은 Murillo 개발자 또는 어시스턴트 또는 지원을 제공하는 다른 사용자와 공유하기 위해 수집할 수 있습니다."
 
 #: src/usr/local/www/crash_reporter.php:100
 msgid ""
@@ -21799,11 +21799,11 @@ msgstr "GPS 유형"
 #, php-format
 msgid ""
 "This option allows a predefined configuration to be selected. Default is the "
-"configuration of pfSense 2.1 and earlier (not recommended). Select Generic "
+"configuration of Murillo 2.1 and earlier (not recommended). Select Generic "
 "if the GPS is not listed.%1$sThe predefined configurations assume the GPS "
 "has already been set to NMEA mode."
 msgstr ""
-"이 옵션을 사용하면 미리 정의된 구성을 선택할 수 있습니다. 기본값은 pfSense 2.1 및 이전 버전(권장하지 않음)의 구성입니다. "
+"이 옵션을 사용하면 미리 정의된 구성을 선택할 수 있습니다. 기본값은 Murillo 2.1 및 이전 버전(권장하지 않음)의 구성입니다. "
 "GPS가 나열되지 않은 경우 Generic(일반)을 선택합니다. %1$s미리 정의된 구성은 GPS가 이미 NMEA 모드로 설정되었다고 "
 "가정합니다."
 
@@ -22830,11 +22830,11 @@ msgid ""
 "If enabled no attempts will be made to ensure that the MAC address of "
 "clients stays the same while they are logged in. This is required when the "
 "MAC address of the client cannot be determined (usually because there are "
-"routers between pfSense and the clients). If this is enabled, RADIUS MAC "
+"routers between Murillo and the clients). If this is enabled, RADIUS MAC "
 "authentication cannot be used."
 msgstr ""
 "활성화된 경우 로그인하는 동안 클라이언트의 MAC 주소가 동일하게 유지되도록 아무런 시도하지 않습니다. 이것은 클라이언트의 MAC 주소를 "
-"확인할 수 없을 때 필요합니다(일반적으로 pfSense와 클라이언트 사이에 라우터가 있기 때문). 이 옵션을 사용하도록 설정하면 "
+"확인할 수 없을 때 필요합니다(일반적으로 Murillo와 클라이언트 사이에 라우터가 있기 때문). 이 옵션을 사용하도록 설정하면 "
 "RADIUS MAC 인증을 사용할 수 없습니다."
 
 #: src/usr/local/www/services_captiveportal.php:640
@@ -23152,9 +23152,9 @@ msgstr "트래픽 한도량"
 msgid ""
 "When enabled, clients will be disconnected after exceeding the amount of "
 "traffic, inclusive of both downloads and uploads, retrieved from the RADIUS "
-"pfSense-Max-Total-Octets attribute."
+"Murillo-Max-Total-Octets attribute."
 msgstr ""
-"활성화된 경우 RADIUS pfSense-Max-Total-Octets 속성에서 검색한 다운로드 및 업로드를 포함하여 트래픽 양이 초과된 "
+"활성화된 경우 RADIUS Murillo-Max-Total-Octets 속성에서 검색한 다운로드 및 업로드를 포함하여 트래픽 양이 초과된 "
 "후 클라이언트의 연결이 끊깁니다. "
 
 #: src/usr/local/www/services_captiveportal.php:960
@@ -23164,10 +23164,10 @@ msgstr "사용자별 대역폭 제한"
 #: src/usr/local/www/services_captiveportal.php:963
 msgid ""
 "When enabled, the bandwidth assigned to a client will be limited to the "
-"values retrieved from the RADIUS pfSense-Bandwidth-Max-Up and pfSense-"
+"values retrieved from the RADIUS Murillo-Bandwidth-Max-Up and Murillo-"
 "Bandwidth-Max-Down attributes or from the comparable WISPr attributes."
 msgstr ""
-"활성화하면 클라이언트에 할당된 대역폭은 RADIUS pfSense-Bandwidth-Max-Up 및 pfSense-Bandwidth-"
+"활성화하면 클라이언트에 할당된 대역폭은 RADIUS Murillo-Bandwidth-Max-Up 및 Murillo-Bandwidth-"
 "Max-Down 속성또는 비슷한 WISPr 속성에서 가져온 값으로 제한됩니다."
 
 #: src/usr/local/www/services_captiveportal.php:970
@@ -23286,11 +23286,11 @@ msgid ""
 "match the Common Name (CN) in the certificate (otherwise, the client browser "
 "will most likely display a security warning). Make sure captive portal "
 "clients can resolve this name in DNS and verify on the client that the IP "
-"resolves to the correct interface IP on pfSense."
+"resolves to the correct interface IP on Murillo."
 msgstr ""
 "이 이름은 HTTPS POST에 대한 양식 작업에 사용되며 인증서의 CN(공통 이름)과 일치해야 합니다(그렇지 않으면 클라이언트 "
 "브라우저에 보안 경고가 표시될 가능성이 높습니다). 캡티브 포털 클라이언트가 DNS에서 이 이름을 확인하고 클라이언트에서 IP가 "
-"pfSense의 올바른 인터페이스 IP로 확인되는지 확인합니다. "
+"Murillo의 올바른 인터페이스 IP로 확인되는지 확인합니다. "
 
 #: src/usr/local/www/services_captiveportal.php:1096
 msgid "*SSL/TLS Certificate"
@@ -23407,8 +23407,8 @@ msgid "Paid Support"
 msgstr "유료 지원"
 
 #: src/usr/local/www/head.inc:431
-msgid "pfSense Book"
-msgstr "pfSense 책"
+msgid "Murillo Book"
+msgstr "Murillo 책"
 
 #: src/usr/local/www/head.inc:432
 msgid "FreeBSD Handbook"
@@ -23502,12 +23502,12 @@ msgid "The settings cannot be managed for a non-local user."
 msgstr "로컬이 아닌 사용자에 대해서는 설정을 관리할 수 없습니다."
 
 #: src/usr/local/www/system_user_settings.php:65
-#: src/etc/inc/pfsense-utils.inc:225
+#: src/etc/inc/murillo-utils.inc:225
 msgid "Theme"
 msgstr "주제"
 
 #: src/usr/local/www/system_user_settings.php:65
-#: src/etc/inc/pfsense-utils.inc:304
+#: src/etc/inc/murillo-utils.inc:304
 msgid "Dashboard Columns"
 msgstr "대시보드 열"
 
@@ -25495,8 +25495,8 @@ msgstr "업스트림 SIP 서버에 연결"
 
 #: src/usr/local/www/wizards/traffic_shaper_wizard_multi_all.inc:1769
 #: src/usr/local/www/wizards/traffic_shaper_wizard_dedicated.inc:1679
-msgid "Shaper configuration saved via pfSense traffic shaper wizard."
-msgstr "pfSense 트래픽 셰이퍼 마법사를 통해 저장된 셰이퍼 구성."
+msgid "Shaper configuration saved via Murillo traffic shaper wizard."
+msgstr "Murillo 트래픽 셰이퍼 마법사를 통해 저장된 셰이퍼 구성."
 
 #: src/usr/local/www/interfaces.php:427
 msgid "The settings have already been applied!"
@@ -28658,10 +28658,10 @@ msgstr "원격 Syslog 콘텐츠"
 msgid ""
 "Syslog sends UDP datagrams to port 514 on the specified remote syslog "
 "server, unless another port is specified. Be sure to set syslogd on the "
-"remote server to accept syslog messages from pfSense."
+"remote server to accept syslog messages from Murillo."
 msgstr ""
 "Syslog는 다른 포트를 지정하지 않는 한 지정된 원격 syslog 서버의 포트 514에 UDP 데이터그램을 보냅니다. 원격 서버에서 "
-"pfSense의 syslog 메시지를 허용하도록 syslogd를 설정해야 합니다. "
+"Murillo의 syslog 메시지를 허용하도록 syslogd를 설정해야 합니다. "
 
 #: src/usr/local/www/widgets/include/services_status.inc:24
 msgid "Services Status"
@@ -29699,10 +29699,10 @@ msgstr "리허설. %1$s아무 파일이 복사되지 않음"
 
 #: src/usr/local/www/system_update_settings.php:247
 msgid ""
-"See \"playback gitsync --help\" in console \"PHP Shell + pfSense tools\" for "
+"See \"playback gitsync --help\" in console \"PHP Shell + Murillo tools\" for "
 "additional information."
 msgstr ""
-"추가적인 정보를 보려면 콘솔의 \"PHP Shell + pfSense tools\"에서  \"playback gitsync --"
+"추가적인 정보를 보려면 콘솔의 \"PHP Shell + Murillo tools\"에서  \"playback gitsync --"
 "help\"을 보세요."
 
 #: src/usr/local/www/status_graph.php:142
@@ -30456,8 +30456,8 @@ msgstr "%s(으)로 XMLRPC 동기화 데이터를 시작하는 중입니다."
 #, php-format
 msgid ""
 "A communications error occurred while attempting XMLRPC sync with %s "
-"(pfsense.%s)."
-msgstr "%s (pfsense.%s)과(와) XMLRPC를 동기화 시도를하는 동안 통신 오류가 발생했습니다."
+"(murillo.%s)."
+msgstr "%s (murillo.%s)과(와) XMLRPC를 동기화 시도를하는 동안 통신 오류가 발생했습니다."
 
 #: src/etc/inc/xmlrpc_client.inc:126
 msgid "Error code received"
@@ -30551,12 +30551,12 @@ msgid "PC Engines ALIX"
 msgstr "PC Engines ALIX"
 
 #: src/etc/inc/config.inc:74
-msgid "Upgrading m0n0wall configuration to pfSense... "
-msgstr "m0n0wall 구성을 pfSense로 업그레이드하는 중..."
+msgid "Upgrading m0n0wall configuration to Murillo... "
+msgstr "m0n0wall 구성을 Murillo로 업그레이드하는 중..."
 
 #: src/etc/inc/config.inc:77
-msgid "ERROR!  Could not convert m0n0wall -> pfsense in config.xml"
-msgstr "오류! config.xml에서 m0n0wall을 -> pfsense로 변환할 수 없습니다."
+msgid "ERROR!  Could not convert m0n0wall -> murillo in config.xml"
+msgstr "오류! config.xml에서 m0n0wall을 -> murillo로 변환할 수 없습니다."
 
 #: src/etc/inc/config.inc:105 src/etc/inc/config.inc:123
 #, php-format
@@ -31970,7 +31970,7 @@ msgstr "아래쪽의 버튼은 %s 작업을 나타내며 그에 따라 활성화
 msgid "limiter"
 msgstr "제한자"
 
-#: src/etc/inc/pfsense-utils.inc:228
+#: src/etc/inc/murillo-utils.inc:228
 #, php-format
 msgid ""
 "Choose an alternative css file (if installed) to change the appearance of "
@@ -31979,90 +31979,90 @@ msgstr ""
 "대안 css 파일(설치된 경우)을 선택하여 webConfigurator의 모양을 변경합니다. css파일은 /usr/local/www/"
 "css/%s에 위치합니다."
 
-#: src/etc/inc/pfsense-utils.inc:233
+#: src/etc/inc/murillo-utils.inc:233
 msgid "The submitted Theme could not be found. Pick a different theme."
 msgstr "제출된 테마를 찾을 수 없습니다. 다른 테마를 선택하십시오."
 
-#: src/etc/inc/pfsense-utils.inc:252
+#: src/etc/inc/murillo-utils.inc:252
 msgid "Scrolls with page"
 msgstr "페이지를 스크롤합니다."
 
-#: src/etc/inc/pfsense-utils.inc:252
+#: src/etc/inc/murillo-utils.inc:252
 msgid "Fixed (Remains visible at top of page)"
 msgstr "고정 (페이지 맨 위에 계속 표시)"
 
-#: src/etc/inc/pfsense-utils.inc:250
+#: src/etc/inc/murillo-utils.inc:250
 msgid "Top Navigation"
 msgstr "상단 탐색"
 
-#: src/etc/inc/pfsense-utils.inc:253
+#: src/etc/inc/murillo-utils.inc:253
 msgid "The fixed option is intended for large screens only."
 msgstr "고정 옵션은 큰 화면에만 적용됩니다."
 
-#: src/etc/inc/pfsense-utils.inc:258
+#: src/etc/inc/murillo-utils.inc:258
 msgid "The submitted Top Navigation value is invalid."
 msgstr "제출된 상단 탐색 값이 잘못되었습니다."
 
-#: src/etc/inc/pfsense-utils.inc:277
+#: src/etc/inc/murillo-utils.inc:277
 msgid "Default (No hostname)"
 msgstr "기본 값 (호스트 이름 없음)"
 
-#: src/etc/inc/pfsense-utils.inc:277
+#: src/etc/inc/murillo-utils.inc:277
 msgid "Hostname only"
 msgstr "호스트 이름만"
 
-#: src/etc/inc/pfsense-utils.inc:277
+#: src/etc/inc/murillo-utils.inc:277
 msgid "Fully Qualified Domain Name"
 msgstr "정규화된 도메인 이름"
 
-#: src/etc/inc/pfsense-utils.inc:275
+#: src/etc/inc/murillo-utils.inc:275
 msgid "Hostname in Menu"
 msgstr "메뉴의 호스트 이름"
 
-#: src/etc/inc/pfsense-utils.inc:278
+#: src/etc/inc/murillo-utils.inc:278
 msgid ""
 "Replaces the Help menu title in the Navbar with the system hostname or FQDN."
 msgstr "Navbar의 도움말 메뉴 제목을 시스템 호스트 이름 또는 FQDN으로 바꿉니다."
 
-#: src/etc/inc/pfsense-utils.inc:283
+#: src/etc/inc/murillo-utils.inc:283
 msgid "The submitted Hostname in Menu value is invalid."
 msgstr "메뉴 값의 제출된 호스트 이름이 잘못되었습니다."
 
-#: src/etc/inc/pfsense-utils.inc:312
+#: src/etc/inc/murillo-utils.inc:312
 msgid "The submitted Dashboard Columns value is invalid."
 msgstr "제출된 대시보드 열 값이 잘못되었습니다."
 
-#: src/etc/inc/pfsense-utils.inc:329
+#: src/etc/inc/murillo-utils.inc:329
 msgid "Interfaces Sort"
 msgstr "인터페이스 정렬"
 
-#: src/etc/inc/pfsense-utils.inc:332
+#: src/etc/inc/murillo-utils.inc:332
 msgid ""
 "If selected, lists of interfaces will be sorted by description, otherwise "
 "they are listed wan,lan,optn..."
 msgstr "선택하면 인터페이스 목록이 설명별로 정렬되고, 그렇지 않으면 wan, lan, optn ...으로 표시됩니다."
 
-#: src/etc/inc/pfsense-utils.inc:346
+#: src/etc/inc/murillo-utils.inc:346
 msgid "Associated Panels Show/Hide"
 msgstr "연결된 패널 표시 / 숨기기"
 
-#: src/etc/inc/pfsense-utils.inc:353
+#: src/etc/inc/murillo-utils.inc:353
 msgid "Show the Available Widgets panel on the Dashboard."
 msgstr "대시보드에 사용 가능한 위젯 패널을 표시합니다."
 
-#: src/etc/inc/pfsense-utils.inc:360
+#: src/etc/inc/murillo-utils.inc:360
 msgid "Show the Log Filter panel in System Logs."
 msgstr "시스템 로그에 로그 필터 창을 표시합니다."
 
-#: src/etc/inc/pfsense-utils.inc:367
+#: src/etc/inc/murillo-utils.inc:367
 msgid "Show the Manage Log panel in System Logs."
 msgstr "시스템 로그에 로그 관리 패널을 표시합니다."
 
-#: src/etc/inc/pfsense-utils.inc:374
+#: src/etc/inc/murillo-utils.inc:374
 msgid "Show the Settings panel in Status Monitoring."
 msgstr "상태 모니터링에 설정 패널을 표시합니다."
 
-#: src/etc/inc/pfsense-utils.inc:376
+#: src/etc/inc/murillo-utils.inc:376
 msgid ""
 "These options allow certain panels to be automatically hidden on page load. "
 "A control is provided in the title bar to un-hide the panel."
@@ -32070,31 +32070,31 @@ msgstr ""
 "이 옵션을 사용하면 페이지 로드 시 특정 패널을 자동으로 숨길 수 있게 해줍니다. 제목 표시줄에 패널을 숨김을 취소하도록 컨트롤이 "
 "제공됩니다."
 
-#: src/etc/inc/pfsense-utils.inc:394
+#: src/etc/inc/murillo-utils.inc:394
 msgid "Left Column Labels"
 msgstr "왼쪽 열 레이블"
 
-#: src/etc/inc/pfsense-utils.inc:397
+#: src/etc/inc/murillo-utils.inc:397
 msgid ""
 "If selected, clicking a label in the left column will select/toggle the "
 "first item of the group."
 msgstr "선택할 경우 왼쪽 열에서 레이블을 클릭하면 그룹의 첫 번째 항목이 선택/토글됩니다."
 
-#: src/etc/inc/pfsense-utils.inc:413
+#: src/etc/inc/murillo-utils.inc:413
 msgid "Alias Popups"
 msgstr "별칭 팝업"
 
-#: src/etc/inc/pfsense-utils.inc:416
+#: src/etc/inc/murillo-utils.inc:416
 msgid ""
 "If selected, the details in alias popups will not be shown, just the alias "
 "description (e.g. in Firewall Rules)."
 msgstr "이 옵션을 선택하면 별칭 팝업의 세부 정보가 표시되지 않고, 별칭 설명만 표시됩니다(예: 방화벽 규칙)."
 
-#: src/etc/inc/pfsense-utils.inc:432
+#: src/etc/inc/murillo-utils.inc:432
 msgid "Browser tab text"
 msgstr "브라우저 탭 텍스트"
 
-#: src/etc/inc/pfsense-utils.inc:435
+#: src/etc/inc/murillo-utils.inc:435
 msgid ""
 "When this is unchecked, the browser tab shows the host name followed by the "
 "current page. Check this box to display the current page followed by the "
@@ -32103,11 +32103,11 @@ msgstr ""
 "이 옵션을 선택하지 않으면 브라우저 탭에 호스트 이름과 뒤이어 현재 페이지가 표시됩니다. 현재 페이지 다음에 호스트 이름을 표시하려면 이 "
 "확인란을 선택하십시오."
 
-#: src/etc/inc/pfsense-utils.inc:479
+#: src/etc/inc/murillo-utils.inc:479
 msgid "Require State Filter"
 msgstr "상태 필터 필요"
 
-#: src/etc/inc/pfsense-utils.inc:482
+#: src/etc/inc/murillo-utils.inc:482
 msgid ""
 "By default, the entire state table is displayed when entering Diagnostics > "
 "States. This option requires a filter to be entered before the states are "
@@ -32116,305 +32116,305 @@ msgstr ""
 "기본적으로 진단 > 상태 입력 시 전체 상태 테이블이 표시됩니다. 이 옵션을 사용하려면 상태가 표시되기 전에 필터를 입력해야 합니다. 큰 "
 "상태 테이블이 있는 시스템에 유용합니다."
 
-#: src/etc/inc/pfsense-utils.inc:502
+#: src/etc/inc/murillo-utils.inc:502
 msgid "Rule Information"
 msgstr "규칙 정보"
 
-#: src/etc/inc/pfsense-utils.inc:506
+#: src/etc/inc/murillo-utils.inc:506
 msgid "Tracking ID"
 msgstr " ID 트래킹"
 
-#: src/etc/inc/pfsense-utils.inc:515 src/etc/inc/pfsense-utils.inc:525
+#: src/etc/inc/murillo-utils.inc:515 src/etc/inc/murillo-utils.inc:525
 #, php-format
 msgid "%1$s by %2$s"
 msgstr "% 2 $ s로 인한 % 1 $ s"
 
-#: src/etc/inc/pfsense-utils.inc:513
+#: src/etc/inc/murillo-utils.inc:513
 msgid "Created"
 msgstr "Created"
 
-#: src/etc/inc/pfsense-utils.inc:523
+#: src/etc/inc/murillo-utils.inc:523
 msgid "Updated"
 msgstr "Updated"
 
-#: src/etc/inc/pfsense-utils.inc:819
+#: src/etc/inc/murillo-utils.inc:819
 msgid "After synch increase advertising skew"
 msgstr "동기화 후 광고업 스큐(skew) 증가"
 
-#: src/etc/inc/pfsense-utils.inc:869
+#: src/etc/inc/murillo-utils.inc:869
 msgid "Error creating socket!"
 msgstr "소켓을 만드는 동안 오류가 발생했습니다."
 
-#: src/etc/inc/pfsense-utils.inc:870
+#: src/etc/inc/murillo-utils.inc:870
 #, php-format
 msgid "Error code is '%1$s' - %2$s"
 msgstr "에러 코드는  '%1$s' - %2$s 입니다."
 
-#: src/etc/inc/pfsense-utils.inc:875
+#: src/etc/inc/murillo-utils.inc:875
 #, php-format
 msgid "setsockopt() failed, error: %s"
 msgstr "setsockopt() 실패, 오류: %s"
 
-#: src/etc/inc/pfsense-utils.inc:879
+#: src/etc/inc/murillo-utils.inc:879
 #, php-format
 msgid "Magic Packet sent (%1$s) to (%2$s) MAC=%3$s"
 msgstr "매직 패킷이  (%2$s) MAC=%3$s로 (%1$s)을 보냈습니다."
 
-#: src/etc/inc/pfsense-utils.inc:961 src/etc/inc/pfsense-utils.inc:981
+#: src/etc/inc/murillo-utils.inc:961 src/etc/inc/murillo-utils.inc:981
 #, php-format
 msgid "Restored %s of config file (maybe from CARP partner)"
 msgstr "구성 파일의 %s이(가) 복원되었습니다(CARP 파트너에서 온것일 수도 있습니다)"
 
-#: src/etc/inc/pfsense-utils.inc:1068
+#: src/etc/inc/murillo-utils.inc:1068
 msgid "reload_interfaces_sync() is starting."
 msgstr "reload_interfaces_sync() 가 시작합니다."
 
-#: src/etc/inc/pfsense-utils.inc:1077
+#: src/etc/inc/murillo-utils.inc:1077
 msgid "Enabling system routing"
 msgstr "시스템 라우팅 사용"
 
-#: src/etc/inc/pfsense-utils.inc:1081
+#: src/etc/inc/murillo-utils.inc:1081
 msgid "Cleaning up Interfaces"
 msgstr "인터페이스 정리"
 
-#: src/etc/inc/pfsense-utils.inc:1587
+#: src/etc/inc/murillo-utils.inc:1587
 msgid "No history data found!"
 msgstr "기록 데이터를 찾을 수 없습니다!"
 
-#: src/etc/inc/pfsense-utils.inc:1720
+#: src/etc/inc/murillo-utils.inc:1720
 msgid "device not present! Is the modem attached to the system?"
 msgstr "장치가 없습니다! 모뎀이 시스템에 연결되어 있습니까?"
 
-#: src/etc/inc/pfsense-utils.inc:1789
+#: src/etc/inc/murillo-utils.inc:1789
 msgid "running"
 msgstr "실행 중"
 
-#: src/etc/inc/pfsense-utils.inc:1835
+#: src/etc/inc/murillo-utils.inc:1835
 msgid "blocking"
 msgstr "차단 중"
 
-#: src/etc/inc/pfsense-utils.inc:1835
+#: src/etc/inc/murillo-utils.inc:1835
 msgid "check for ethernet loops"
 msgstr "이더넷(ethernet) 루프 검사"
 
-#: src/etc/inc/pfsense-utils.inc:1838
+#: src/etc/inc/murillo-utils.inc:1838
 msgid "learning"
 msgstr "learning"
 
-#: src/etc/inc/pfsense-utils.inc:1841
+#: src/etc/inc/murillo-utils.inc:1841
 msgid "forwarding"
 msgstr "전송중"
 
-#: src/etc/inc/pfsense-utils.inc:1988
+#: src/etc/inc/murillo-utils.inc:1988
 #, php-format
 msgid "DNSCACHE: Found old IP %1$s and new IP %2$s"
 msgstr "DNSCACHE: 예전 IP %1$s와 새로운 IP %2$s를 찾았습니다"
 
-#: src/etc/inc/pfsense-utils.inc:2010
+#: src/etc/inc/murillo-utils.inc:2010
 #, php-format
 msgid "Loading %s cryptographic accelerator module."
 msgstr "%s 암호화 가속기 모듈을 로드하는 중입니다."
 
-#: src/etc/inc/pfsense-utils.inc:2028
+#: src/etc/inc/murillo-utils.inc:2028
 #, php-format
 msgid "Loading %s thermal monitor module."
 msgstr "%s 열 모니터 모듈을 로드하는 중입니다."
 
-#: src/etc/inc/pfsense-utils.inc:2105 src/etc/inc/pfsense-utils.inc:2161
+#: src/etc/inc/murillo-utils.inc:2105 src/etc/inc/murillo-utils.inc:2161
 #, php-format
 msgid "Download file failed with status code %1$s. URL: %2$s"
 msgstr "다운로드가 상태 코드 %1$s로 실패했습니다. URL: %2$s"
 
-#: src/etc/inc/pfsense-utils.inc:2380
+#: src/etc/inc/murillo-utils.inc:2380
 #, php-format
 msgid "Could not process non-existent file from alias: %s"
 msgstr "별칭에서 존재하지 않는 파일을 처리할 수 없습니다: %s"
 
-#: src/etc/inc/pfsense-utils.inc:2385
+#: src/etc/inc/murillo-utils.inc:2385
 #, php-format
 msgid "Could not process empty file from alias: %s"
 msgstr "별칭에서 빈 파일을 처리할 수 없습니다: %s"
 
-#: src/etc/inc/pfsense-utils.inc:2390
+#: src/etc/inc/murillo-utils.inc:2390
 #, php-format
 msgid "Could not process aliases from alias: %s"
 msgstr "별칭에서 별칭들을 처리할 수 없습니다: %s"
 
-#: src/etc/inc/pfsense-utils.inc:2470
+#: src/etc/inc/murillo-utils.inc:2470
 #, php-format
 msgid "Failed to download alias %s"
 msgstr "%s 별칭 다운로드를 실패했습니다."
 
-#: src/etc/inc/pfsense-utils.inc:2499
+#: src/etc/inc/murillo-utils.inc:2499
 msgid ""
 "Alias archive is a .tar/tgz file which cannot be decompressed because "
 "utility is missing!"
 msgstr "별칭 아카이브는 유틸리티가 없으므로 압축을 풀 수 없는 .tar/tgz  파일입니다!"
 
-#: src/etc/inc/pfsense-utils.inc:2509
+#: src/etc/inc/murillo-utils.inc:2509
 #, php-format
 msgid "Could not open %s/aliases for writing!"
 msgstr "%s/별칭을 쓰기 위해 열 수 없습니다!"
 
-#: src/etc/inc/pfsense-utils.inc:2515
+#: src/etc/inc/murillo-utils.inc:2515
 #, php-format
 msgid "The following file could not be read %1$s from %2$s"
 msgstr "다음 파일을 %2$s에서 %1$s읽을 수 없습니다."
 
-#: src/etc/inc/pfsense-utils.inc:3118
+#: src/etc/inc/murillo-utils.inc:3118
 msgid "Bosnian"
 msgstr "보스니아어"
 
-#: src/etc/inc/pfsense-utils.inc:3119
+#: src/etc/inc/murillo-utils.inc:3119
 msgid "Chinese"
 msgstr "중국어"
 
-#: src/etc/inc/pfsense-utils.inc:3120
+#: src/etc/inc/murillo-utils.inc:3120
 msgid "Chinese (Simplified, China)"
 msgstr "중국어(간체, 중국)"
 
-#: src/etc/inc/pfsense-utils.inc:3121
+#: src/etc/inc/murillo-utils.inc:3121
 msgid "Chinese (Simplified, Hong Kong SAR China)"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3122
+#: src/etc/inc/murillo-utils.inc:3122
 msgid "Chinese (Traditional, Taiwan)"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3123
+#: src/etc/inc/murillo-utils.inc:3123
 msgid "Dutch"
 msgstr "네덜란드어"
 
-#: src/etc/inc/pfsense-utils.inc:3124
+#: src/etc/inc/murillo-utils.inc:3124
 msgid "English"
 msgstr "영어"
 
-#: src/etc/inc/pfsense-utils.inc:3125
+#: src/etc/inc/murillo-utils.inc:3125
 msgid "French"
 msgstr "프랑스어"
 
-#: src/etc/inc/pfsense-utils.inc:3126
+#: src/etc/inc/murillo-utils.inc:3126
 msgid "German (Germany)"
 msgstr "독일어"
 
-#: src/etc/inc/pfsense-utils.inc:3127
+#: src/etc/inc/murillo-utils.inc:3127
 msgid "Italian"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3128
+#: src/etc/inc/murillo-utils.inc:3128
 msgid "Korean"
 msgstr ""
 
-#: src/etc/inc/pfsense-utils.inc:3129
+#: src/etc/inc/murillo-utils.inc:3129
 msgid "Norwegian Bokmål"
 msgstr "노르웨이어 부크몰"
 
-#: src/etc/inc/pfsense-utils.inc:3130
+#: src/etc/inc/murillo-utils.inc:3130
 msgid "Polish"
 msgstr "폴란드어"
 
-#: src/etc/inc/pfsense-utils.inc:3131
+#: src/etc/inc/murillo-utils.inc:3131
 msgid "Portuguese"
 msgstr "포르투갈어"
 
-#: src/etc/inc/pfsense-utils.inc:3132
+#: src/etc/inc/murillo-utils.inc:3132
 msgid "Portuguese (Brazil)"
 msgstr "포르투갈어(브라질)"
 
-#: src/etc/inc/pfsense-utils.inc:3133
+#: src/etc/inc/murillo-utils.inc:3133
 msgid "Russian"
 msgstr "러시안어"
 
-#: src/etc/inc/pfsense-utils.inc:3134
+#: src/etc/inc/murillo-utils.inc:3134
 msgid "Spanish"
 msgstr "스페인어"
 
-#: src/etc/inc/pfsense-utils.inc:3135
+#: src/etc/inc/murillo-utils.inc:3135
 msgid "Spanish (Argentina)"
 msgstr "스페인어(아르헨티나)"
 
-#: src/etc/inc/pfsense-utils.inc:3330 src/etc/inc/pfsense-utils.inc:3345
-#: src/etc/inc/pfsense-utils.inc:3371
+#: src/etc/inc/murillo-utils.inc:3330 src/etc/inc/murillo-utils.inc:3345
+#: src/etc/inc/murillo-utils.inc:3371
 msgid "No Service"
 msgstr "서비스 없음"
 
-#: src/etc/inc/pfsense-utils.inc:3346
+#: src/etc/inc/murillo-utils.inc:3346
 msgid "Restricted Service"
 msgstr "제한된 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3347
+#: src/etc/inc/murillo-utils.inc:3347
 msgid "Valid Service"
 msgstr "유효한 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3348
+#: src/etc/inc/murillo-utils.inc:3348
 msgid "Restricted Regional Service"
 msgstr "제한된 지역 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3349
+#: src/etc/inc/murillo-utils.inc:3349
 msgid "Powersaving Service"
 msgstr "절전형 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3350
+#: src/etc/inc/murillo-utils.inc:3350
 msgid "Unknown Service"
 msgstr "알 수 없는 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3356
+#: src/etc/inc/murillo-utils.inc:3356
 msgid "Invalid SIM/locked State"
 msgstr "인식 불가능한 SIM/잠금 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3357
+#: src/etc/inc/murillo-utils.inc:3357
 msgid "Valid SIM State"
 msgstr "유효한 SIM 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3358
+#: src/etc/inc/murillo-utils.inc:3358
 msgid "Invalid SIM CS State"
 msgstr "인식 불가능한 SIM CS 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3359
+#: src/etc/inc/murillo-utils.inc:3359
 msgid "Invalid SIM PS State"
 msgstr "인식 불가능한 SIM PS 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3360
+#: src/etc/inc/murillo-utils.inc:3360
 msgid "Invalid SIM CS/PS State"
 msgstr "잘못된 SIM CS/PS 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3361
+#: src/etc/inc/murillo-utils.inc:3361
 msgid "Missing SIM State"
 msgstr "SIM 상태 누락"
 
-#: src/etc/inc/pfsense-utils.inc:3372
+#: src/etc/inc/murillo-utils.inc:3372
 msgid "Limited Service"
 msgstr "제한된 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3388
+#: src/etc/inc/murillo-utils.inc:3388
 msgid "Initializing Service"
 msgstr "서비스 초기화 중"
 
-#: src/etc/inc/pfsense-utils.inc:3389
+#: src/etc/inc/murillo-utils.inc:3389
 msgid "Network Lock error Service"
 msgstr "네트워크 잠금 오류 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3390
+#: src/etc/inc/murillo-utils.inc:3390
 msgid "Network Locked Service"
 msgstr "네트워크 잠금 서비스"
 
-#: src/etc/inc/pfsense-utils.inc:3391
+#: src/etc/inc/murillo-utils.inc:3391
 msgid "Unlocked or correct MCC/MNC Service"
 msgstr "MCC/MCC 서비스 잠금 해제 또는 수정"
 
-#: src/etc/inc/pfsense-utils.inc:3397
+#: src/etc/inc/murillo-utils.inc:3397
 msgid "No action State"
 msgstr "작업 상태 없음"
 
-#: src/etc/inc/pfsense-utils.inc:3398
+#: src/etc/inc/murillo-utils.inc:3398
 msgid "Network lock State"
 msgstr "네트워크 잠금 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3399
+#: src/etc/inc/murillo-utils.inc:3399
 msgid "(U)SIM card lock State"
 msgstr "(U)SIM 카드 잠금 상태"
 
-#: src/etc/inc/pfsense-utils.inc:3400
+#: src/etc/inc/murillo-utils.inc:3400
 msgid "Network Lock and (U)SIM card Lock State"
 msgstr "Network Lock 및 (U)SIM 카드 잠금 상태"
 
@@ -33269,7 +33269,7 @@ msgid "Login to %1$s"
 msgstr " %1$s에 로그인"
 
 #: src/etc/inc/authgui.inc:273
-msgid "pfSense - Login"
+msgid "Murillo - Login"
 msgstr ""
 
 #: src/etc/inc/authgui.inc:332
@@ -33746,8 +33746,8 @@ msgid "WebCfg - Crash reporter"
 msgstr "WebCfg - 충돌 리포터"
 
 #: src/etc/inc/priv.defs.inc:25
-msgid "Uploads crash reports to pfSense and or deletes crash reports."
-msgstr "충돌 보고서를 pfSense로 업로드하거나 충돌 보고서를 삭제합니다."
+msgid "Uploads crash reports to Murillo and or deletes crash reports."
+msgstr "충돌 보고서를 Murillo로 업로드하거나 충돌 보고서를 삭제합니다."
 
 #: src/etc/inc/priv.defs.inc:30
 msgid "WebCfg - Diagnostics: ARP Table"
@@ -35442,12 +35442,12 @@ msgid "Allow access to the 'OpenVPN: Servers' page."
 msgstr " 'OpenVPN: 서버' 페이지에 액세스하는 것을 허용합니다.   "
 
 #: src/etc/inc/priv.defs.inc:1313
-msgid "WebCfg - pfSense wizard subsystem"
-msgstr "WebCfg - pfSense 마법사 하위 조직"
+msgid "WebCfg - Murillo wizard subsystem"
+msgstr "WebCfg - Murillo 마법사 하위 조직"
 
 #: src/etc/inc/priv.defs.inc:1314
-msgid "Allow access to the 'pfSense wizard subsystem' page."
-msgstr " 'pfSense 마법사 하위 조직' 페이지에 액세스하는 것을 허용합니다.   "
+msgid "Allow access to the 'Murillo wizard subsystem' page."
+msgstr " 'Murillo 마법사 하위 조직' 페이지에 액세스하는 것을 허용합니다.   "
 
 #: src/etc/inc/priv.defs.inc:1319
 msgid "WebCfg - XMLRPC Library"
@@ -36831,12 +36831,12 @@ msgid ""
 "\t\t\t\t\t<p align=\"center\"><strong>NO COMMERCIAL DISTRIBUTION OF THE "
 "PFSENSE&reg; CE SOFTWARE IS ALLOWED.</strong>\n"
 "\t\t\t\t\t</p>\n"
-"\t\t\t\t\t<p>pfSense&reg; is a federally and internationally registered "
+"\t\t\t\t\t<p>Murillo&reg; is a federally and internationally registered "
 "trademark and service mark of ESF, and is exclusively licensed to Rubicon "
 "Communications, LLC (d/b/a Netgate) (\"Netgate\").</p>\n"
-"\t\t\t\t\t<p>Any unauthorized use of the pfSense&reg; mark is prohibited by "
+"\t\t\t\t\t<p>Any unauthorized use of the Murillo&reg; mark is prohibited by "
 "United States and international law. Please refer to the Netgate <a href="
-"\"https://www.pfsense.org/trademarks.html\" target=\"_blank\"> Trademark "
+"\"https://www.murillo.org/trademarks.html\" target=\"_blank\"> Trademark "
 "Usage Guidelines</a> for how to properly use the mark.</p>\n"
 "\t\t\t\t\t</div>\n"
 "\t\t\t\t\t<div class=\"modal-footer\" style=\"background-color:#1e3f75; "
@@ -37531,9 +37531,9 @@ msgstr "이 정적 경로 사용 안 함"
 
 #: src/usr/local/www/system_usermanager_settings.php:242
 msgid ""
-"<span id=\"ldaptestop\">Testing pfSense LDAP settings... One moment please..."
+"<span id=\"ldaptestop\">Testing Murillo LDAP settings... One moment please..."
 ""
-msgstr "<span id=\"ldaptestop\">pfSense LDAP 설정을 테스트 중입니다... 잠시만 기다려 주십시오..."
+msgstr "<span id=\"ldaptestop\">Murillo LDAP 설정을 테스트 중입니다... 잠시만 기다려 주십시오..."
 
 #: src/usr/local/www/services_ntpd_pps.php:129
 msgid ""
@@ -38475,14 +38475,14 @@ msgid "Use RADIUS Session-Timeout attributes"
 msgstr "RADIUS 세션 시간 초과 속성 사용"
 
 #: src/usr/local/www/services_captiveportal.php:954
-msgid "Use RADIUS pfSense-Max-Total-Octets attribute"
-msgstr "RADIUS pfSense-Max-Total-Octets 특성 사용"
+msgid "Use RADIUS Murillo-Max-Total-Octets attribute"
+msgstr "RADIUS Murillo-Max-Total-Octets 특성 사용"
 
 #: src/usr/local/www/services_captiveportal.php:961
 msgid ""
-"Use RADIUS pfSense-Bandwidth-Max-Up and pfSense-Bandwidth-Max-Down "
+"Use RADIUS Murillo-Bandwidth-Max-Up and Murillo-Bandwidth-Max-Down "
 "attributes"
-msgstr "RADIUS pfSense-Bandwidth-Max-Up 및 pfSense-Bandwidth-Max-Down 특성 사용"
+msgstr "RADIUS Murillo-Bandwidth-Max-Up 및 Murillo-Bandwidth-Max-Down 특성 사용"
 
 #: src/usr/local/www/services_captiveportal.php:986
 msgid "Send RADIUS accounting packets."
@@ -38717,8 +38717,8 @@ msgid "FreeBSD default"
 msgstr "FreeBSD 기본값"
 
 #: src/usr/local/www/interfaces.php:2199
-msgid "pfSense Default"
-msgstr "pfSense 기본값"
+msgid "Murillo Default"
+msgstr "Murillo 기본값"
 
 #: src/usr/local/www/interfaces.php:2207
 msgid "Saved Cfg"
@@ -39103,26 +39103,26 @@ msgstr "명시적 정체 알림(ECN) 사용"
 msgid "Enable this queue"
 msgstr "이 큐(Queue) 사용"
 
-#: src/etc/inc/pfsense-utils.inc:330
+#: src/etc/inc/murillo-utils.inc:330
 msgid "Sort Alphabetically"
 msgstr "알파벳순 정렬"
 
-#: src/etc/inc/pfsense-utils.inc:365
+#: src/etc/inc/murillo-utils.inc:365
 msgid "Manage Log"
 msgstr "로그 관리"
 
-#: src/etc/inc/pfsense-utils.inc:372
+#: src/etc/inc/murillo-utils.inc:372
 msgid "Monitoring Settings"
 msgstr "모니터링 설정"
 
-#: src/etc/inc/pfsense-utils.inc:414
+#: src/etc/inc/murillo-utils.inc:414
 msgid "Disable details in alias popups"
 msgstr "별칭 팝업에서 세부 정보 사용 안 함"
 
-#: src/etc/inc/pfsense-utils.inc:433
+#: src/etc/inc/murillo-utils.inc:433
 msgid "Display page name first in browser tab"
 msgstr "브라우저 탭에서 페이지 이름 먼저 표시"
 
-#: src/etc/inc/pfsense-utils.inc:480
+#: src/etc/inc/murillo-utils.inc:480
 msgid "Do not display state table without a filter"
 msgstr "필터 없이 상태 테이블 표시 안 함"
