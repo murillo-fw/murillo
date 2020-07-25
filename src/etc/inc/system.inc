@@ -576,7 +576,7 @@ function system_hosts_generate() {
 function system_dhcpleases_configure() {
 	global $config, $g;
 	if (!function_exists('is_dhcp_server_enabled')) {
-		require_once('pfsense-utils.inc');
+		require_once('murillo-utils.inc');
 	}
 	$pidfile = "{$g['varrun_path']}/dhcpleases.pid";
 

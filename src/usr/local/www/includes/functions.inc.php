@@ -24,7 +24,7 @@ if (Connection_Aborted()) {
 }
 
 require_once("config.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 
 function get_stats() {
 	$stats['cpu'] = cpu_usage();

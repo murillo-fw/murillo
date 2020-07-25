@@ -29,7 +29,7 @@
 
 require_once("guiconfig.inc");
 require_once("certs.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 
 $ca_methods = array(
 	"internal" => gettext("Create an internal Certificate Authority"),

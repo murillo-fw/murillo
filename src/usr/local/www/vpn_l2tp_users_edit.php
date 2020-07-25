@@ -45,7 +45,7 @@ function l2tp_users_sort() {
 }
 
 require_once("guiconfig.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 require_once("vpn.inc");
 
 init_config_arr(array('l2tp', 'user'));

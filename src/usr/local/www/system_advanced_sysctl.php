@@ -32,7 +32,7 @@
 ##|-PRIV
 
 require_once("guiconfig.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 
 init_config_arr(array('sysctl', 'item'));
 $a_tunable = &$config['sysctl']['item'];

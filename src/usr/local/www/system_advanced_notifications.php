@@ -28,7 +28,7 @@
 
 require_once("guiconfig.inc");
 require_once("notices.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 
 $pconfig = array();
 init_config_arr(array('notifications', 'smtp'));

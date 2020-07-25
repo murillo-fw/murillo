@@ -29,7 +29,7 @@
 require_once("guiconfig.inc");
 require_once("certs.inc");
 require_once("openvpn.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 require_once("vpn.inc");
 
 $max_lifetime = crl_get_max_lifetime();

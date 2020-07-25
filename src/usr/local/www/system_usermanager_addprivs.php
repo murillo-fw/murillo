@@ -29,7 +29,7 @@
 ##|-PRIV
 
 require_once("guiconfig.inc");
-require_once("pfsense-utils.inc");
+require_once("murillo-utils.inc");
 
 $logging_level = LOG_WARNING;
 $logging_prefix = gettext("Local User Database");
