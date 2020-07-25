@@ -1,12 +1,12 @@
-## Contributing to pfSense
+## Contributing to Murillo
 
-The pfSense project welcomes contributions, big or small. Members of the pfSense community frequently contribute bug fixes, enhancements, and documentation changes to improve the functionality and usability of the software.
+The Murillo project welcomes contributions, big or small. Members of the Murillo community frequently contribute bug fixes, enhancements, and documentation changes to improve the functionality and usability of the software.
 
-All of the pfSense project source code is on Github. We recommend potential contributors familiarize themselves with [the pfSense project git repositories](https://github.com/pfsense) and [Github in general](https://help.github.com).
+All of the Murillo project source code is on Github. We recommend potential contributors familiarize themselves with [the Murillo project git repositories](https://github.com/Murillo-fw) and [Github in general](https://help.github.com).
 
 If you want to contribute but do not have a specific topic in mind, review the [list of open bug reports and other issues that are in need of attention](https://redmine.pfsense.org/projects/pfsense/issues).
 
-Contact [coreteam@pfsense.org](mailto:coreteam@pfsense.org "Mail to coreteam@pfsense.org") with any additional questions or concerns.
+Contact [murillo.secure@gmail.com](mailto:murillo.secure@gmail.com "Mail to murillo.secure@gmail.com") with any additional questions or concerns.
 
 Before submitting changes, please take a few moments to review our submission guidelines below.
 
@@ -32,5 +32,5 @@ The easiest and best way to contribute code changes to the project is through pu
 
 For an outline of the process and guidelines to follow, see [Submitting a Pull Request via Github](https://doc.pfsense.org/index.php/Submitting_a_Pull_Request_via_Github)
 
-Contributed code must conform to the [pfSense project Developer Style Guide](https://doc.pfsense.org/index.php/Developer_Style_Guide).
+Contributed code must conform to the [Murillo project Developer Style Guide](https://doc.pfsense.org/index.php/Developer_Style_Guide).
 
