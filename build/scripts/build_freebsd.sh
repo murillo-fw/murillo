@@ -1,8 +1,12 @@
 #!/bin/sh
 #
 # build_freebsd.sh
+# 
+# part of Murillo (https://murillo.saggis.com)
+# Copyright (c) 2020 Saggi, LLC
+# All rights reserved
 #
-# part of pfSense (https://www.pfsense.org)
+# originally from pfSense (https://www.pfsense.org)
 # Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
 # All rights reserved.
 #
