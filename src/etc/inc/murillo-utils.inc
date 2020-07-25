@@ -922,8 +922,8 @@ function restore_config_section($section_name, $new_contents) {
 	fclose($fout);
 
 	$xml = parse_xml_config($g['tmp_path'] . "/tmpxml", null);
-	if ($xml['murillo']) {
-		$xml = $xml['murillo'];
+	if ($xml['pfsense']) {
+		$xml = $xml['pfsense'];
 	}
 	else if ($xml['m0n0wall']) {
 		$xml = $xml['m0n0wall'];
