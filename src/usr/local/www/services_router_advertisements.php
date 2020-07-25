@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * Copyright (c) 2010 Seth Mos <seth.mos@dds.nl>
@@ -124,7 +124,7 @@ $ramode_help = gettext('Select the Operating Mode for the Router Advertisement (
 	'<dt>' . gettext('Assisted') . 		 '</dt><dd>' . gettext('Will advertise this router with configuration through a DHCPv6 server and/or stateless autoconfig.') . '</dd>' .
 	'<dt>' . gettext('Stateless DHCP') . '</dt><dd>' . gettext('Will advertise this router with stateless autoconfig and other configuration information available via DHCPv6.') . '</dd>' .
 	'</dl>' .
-	gettext('It is not required to activate DHCPv6 server on pfSense when set to "Managed", "Assisted" or "Stateless DHCP", it can be another host on the network.') .
+	gettext('It is not required to activate DHCPv6 server on Murillo when set to "Managed", "Assisted" or "Stateless DHCP", it can be another host on the network.') .
 	'</div>';
 
 if ($_POST['save']) {

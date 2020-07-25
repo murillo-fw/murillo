@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -118,7 +118,7 @@ if ($_POST && !$input_errors) {
 		eval($pkg['step'][$stepid]['stepsubmitphpaction']);
 	}
 	if (!$input_errors) {
-		write_config(gettext("Configuration changed via the pfSense wizard subsystem."));
+		write_config(gettext("Configuration changed via the Murillo wizard subsystem."));
 	}
 
 	$stepid++;
