@@ -39073,7 +39073,7 @@ msgstr "DNS dinamico %1$s (%2$s): %3$s extraido do sistema local."
 
 #: src/etc/inc/copynotice.inc:50
 msgid ""
-"<p align=\"center\"><font size=\"3\">Copyright &copy; 2004-2019. Electric "
+"<p align=\"center\"><font size=\"3\">Copyright &copy; 2020 Saggi, LLC"
 "Sheep Fencing LLC (\"ESF\"). All Rights Reserved.</p>\n"
 "\t\t\t\t\t<p align=\"center\"><strong>NO COMMERCIAL DISTRIBUTION OF THE "
 "MURILLO&reg; SOFTWARE IS ALLOWED.</strong>\n"
