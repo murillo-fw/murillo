@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2005-2006 Colin Smith (ethethlay@gmail.com)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
@@ -82,9 +82,6 @@ function pkg_env($extra_env = array()) {
 	global $config, $g;
 
 	$user_agent = $g['product_name'] . '/' . $g['product_version'];
-	if (!isset($config['system']['do_not_send_uniqueid'])) {
-		$user_agent .= ':' . system_get_uniqueid();
-	}
 
 	$pkg_env_vars = array(
 		"LANG" => "C",

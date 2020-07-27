@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2008-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -49,8 +49,6 @@ $username = strtolower($config['system']['acb']['gold_username']);
 
 // Defined password
 $password = $config['system']['acb']['gold_password'];
-
-$uniqueID = system_get_uniqueid();
 
 /* Check whether ACB is enabled */
 function acb_enabled() {
@@ -189,14 +187,10 @@ function test_connection($post) {
 }
 
 function upload_config($manual = false) {
-	global $config, $g, $input_errors, $userkey, $uniqueID;
+	global $config, $g, $input_errors, $userkey;
 
 	if (empty($userkey)) {
 		$userkey = get_device_key();
-	}
-
-	if (empty($uniqueID)) {
-		$uniqueID = system_get_uniqueid();
 	}
 
 	// Do nothing when booting or when not enabled
@@ -271,7 +265,6 @@ function upload_config($manual = false) {
 
 			$post_fields = array(
 				'reason' => htmlspecialchars($reason),
-				'uid' => $uniqueID,
 				'file' => curl_file_create($tmpname, 'image/jpg', 'config.jpg'),
 				'userkey' => htmlspecialchars($userkey),
 				'sha256_hash' => $raw_config_sha256_hash,

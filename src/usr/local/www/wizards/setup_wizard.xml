@@ -25,7 +25,7 @@
  * limitations under the License.
  */
 </copyright>
-<totalsteps>10</totalsteps>
+<totalsteps>9</totalsteps>
 <step>
 	<id>1</id>
 	<title>Murillo Setup</title>
@@ -51,32 +51,6 @@
 </step>
 <step>
 	<id>2</id>
-	<title>Netgate® Global Support is available 24/7</title>
-	<disableheader>true</disableheader>
-	<description>
-	<![CDATA[
-		<p>Our 24/7 worldwide team of support engineers are the most qualified to diagnose your issue and resolve it quickly, from branch office to enterprise — on premises to cloud.</p>
-		<p>We offer several support subscription plans tailored to fit different environment sizes and requirements. Many companies around the world choose Netgate support because:</p>
-		<p>
-		<ul>
-			<li>Support is available 24 hours a day, seven days a week, including holidays.</li>
-			<li>Support engineers are located around the world, ensuring that no support call is missed.</li>
-			<li>Our support engineers hold many prestigious network engineer certificates and have years of hands-on experience with networking.</li>
-		</ul>
-		</p>
-		<br />
-		<p><a href="https://www.netgate.com/pfw2" class="btn btn-info" target="_blank">Learn more</a></p>
-    ]]>
-  </description>
-	<fields>
-		<field>
-			<name>Next</name>
-			<type>submit</type>
-		</field>
-	</fields>
-</step>
-<step>
-	<id>3</id>
 	<title>General Information</title>
 	<description>On this screen the general Murillo parameters will be set.</description>
 	<fields>
@@ -171,7 +145,7 @@
 	</stepsubmitphpaction>
 </step>
 <step>
-	<id>4</id>
+	<id>3</id>
 	<title>Time Server Information</title>
 	<description>Please enter the time, date and time zone.</description>
 	<fields>
@@ -205,7 +179,7 @@
 	</stepsubmitphpaction>
 </step>
 <step>
-	<id>5</id>
+	<id>4</id>
 	<skip_flavors>ec2,ec2-ic</skip_flavors>
 	<disableallfieldsbydefault>true</disableallfieldsbydefault>
 	<title>Configure WAN Interface</title>
@@ -589,7 +563,7 @@
 	</stepsubmitbeforesave>
 </step>
 <step>
-	<id>6</id>
+	<id>5</id>
 	<skip_flavors>ec2,ec2-ic</skip_flavors>
 	<title>Configure LAN Interface</title>
 	<description>On this screen the Local Area Network information will be configured.</description>
@@ -700,7 +674,7 @@
 	</stepsubmitphpaction>
 </step>
 <step>
-	<id>7</id>
+	<id>6</id>
 	<title>Set Admin WebGUI Password</title>
 	<description>On this screen the admin password will be set, which is used to access the WebGUI and also SSH services if enabled.</description>
 	<fields>
@@ -734,7 +708,7 @@
 	</stepsubmitphpaction>
 </step>
 <step>
-	<id>8</id>
+	<id>7</id>
 	<title>Reload configuration</title>
 	<disableheader>true</disableheader>
 	<description>Click 'Reload' to reload Murillo with new changes.</description>
@@ -746,7 +720,7 @@
 	</fields>
 </step>
 <step>
-	<id>9</id>
+	<id>8</id>
 	<title>Reload in progress</title>
 	<description>
 		A reload is now in progress.  Please wait. &lt;p&gt;
@@ -796,7 +770,7 @@
 	</stepafterformdisplay>
 </step>
 <step>
-	<id>10</id>
+	<id>9</id>
 	<title>Wizard completed.</title>
 	<stepbeforeformdisplay>
 	<![CDATA[
@@ -815,9 +789,6 @@
 		one of the most important things you can do to maintain the security of your network.</p>
 		<input type="button" onclick="window.location.href='$myurlpkg_mgr_install.php?id=firmware'" class="btn btn-xs btn-success" value="Check for updates"/>
 		</br></br>
-		<p><h4>Remember, we're here to help.</h4></p>
-		<p><a target='_blank' href='https://www.netgate.com/pfw2'><strong><span style="font-size:16px">Click here</span></strong></a> to learn about Netgate 24/7/365 support services.</p>
-		<br />
 		<input type="button" onclick="window.location.href='$myurl'" class="btn btn-sm btn-primary" value="Finish"/>
 		</p>
 	</div>

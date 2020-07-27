@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * Copyright (c) 2007 Scott Dale
@@ -190,13 +190,6 @@ $temp_use_f = (isset($user_settings['widgets']['thermal_sensors-0']) && !empty($
 					    " <strong>{$serial}</strong>\n");
 				}
 
-				// If the uniqueID is available, display it here
-				$uniqueid = system_get_uniqueid();
-				if (!empty($uniqueid)) {
-					print("<br />" .
-					    gettext("Netgate Device ID:") .
-					    " <strong>{$uniqueid}</strong>");
-				}
 ?>
 			</td>
 		</tr>

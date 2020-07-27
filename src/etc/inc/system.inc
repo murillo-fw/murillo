@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -2378,24 +2378,6 @@ function system_get_serial() {
 	}
 
 	return "";
-}
-
-function system_get_uniqueid() {
-	global $g;
-
-	$uniqueid_file="{$g['vardb_path']}/uniqueid";
-
-	if (empty($g['uniqueid'])) {
-		if (!file_exists($uniqueid_file)) {
-			mwexec("/usr/sbin/gnid > {$g['vardb_path']}/uniqueid " .
-			    "2>/dev/null");
-		}
-		if (file_exists($uniqueid_file)) {
-			$g['uniqueid'] = @file_get_contents($uniqueid_file);
-		}
-	}
-
-	return ($g['uniqueid'] ?: '');
 }
 
 /*
