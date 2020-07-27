@@ -2110,7 +2110,7 @@ function print_credit() {
 
 	return  '<a target="_blank" href="https://pfsense.org">' . $g["product_name"] . '</a>' .
 			gettext(' is developed and maintained by ') .
-			'<a target="_blank" href="https://saggis.com">Saggi, LLC. </a>' . ' &copy; ESF ' . $g["product_copyright_years"] .
+			'<a target="_blank" href="https://saggis.com">Saggi, LLC. </a>' . ' &copy; Saggi, LLC ' . $g["product_copyright_years"] .
 			'<a target="_blank" href="https://murillo.saggis.com/license">' .
 			gettext(' View license.') . '</a>';
 }
