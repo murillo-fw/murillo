@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2003-2006 Manuel Kasper <mk@neon1.net>
  * Copyright (c) 2005-2006 Bill Marquette <bill.marquette@gmail.com>
@@ -2110,8 +2110,8 @@ function print_credit() {
 
 	return  '<a target="_blank" href="https://pfsense.org">' . $g["product_name"] . '</a>' .
 			gettext(' is developed and maintained by ') .
-			'<a target="_blank" href="https://netgate.com">Netgate. </a>' . ' &copy; ESF ' . $g["product_copyright_years"] .
-			'<a target="_blank" href="https://pfsense.org/license">' .
+			'<a target="_blank" href="https://saggis.com">Saggi, LLC. </a>' . ' &copy; ESF ' . $g["product_copyright_years"] .
+			'<a target="_blank" href="https://murillo.saggis.com/license">' .
 			gettext(' View license.') . '</a>';
 }
 function get_user_remote_address() {
