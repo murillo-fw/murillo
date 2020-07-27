@@ -54,8 +54,8 @@ $copyrightfile = "{$g['cf_conf_path']}/copyright";
 				print(gettext("<p align=\"center\"><font size=\"3\">Copyright &copy; 2020 Saggi, LLC. All Rights Reserved.</p>
 					<p align=\"center\"><strong>NO COMMERCIAL DISTRIBUTION OF THE MURILLO&reg; SOFTWARE IS ALLOWED.</strong>
 					</p>
-					<p>Murillo&reg; is a federally and internationally registered trademark and service mark of Saggi, LLC, and is exclusively licensed to Rubicon Communications, LLC (d/b/a Netgate) (\"Netgate\").</p>
-					<p>Any unauthorized use of the pfSense&reg; mark is prohibited by United States and international law. Please refer to the Netgate <a href=\"https://www.pfsense.org/trademarks.html\" target=\"_blank\"> Trademark Usage Guidelines</a> for how to properly use the mark.</p>
+					<p>Murillo&reg; is a federally and internationally registered trademark and service mark of Saggi, LLC.</p>
+					<p>Any unauthorized use of the Murillo&reg; mark is prohibited by United States and international law.</p>
 					</div>
 					<div class=\"modal-footer\" style=\"background-color:#1e3f75; color:white;\">
 					<button type=\"button\" class=\"btn btn-xs btn-success\" data-dismiss=\"modal\" aria-label=\"Close\">
