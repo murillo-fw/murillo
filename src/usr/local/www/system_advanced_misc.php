@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * Copyright (c) 2008 Shrew Soft Inc
@@ -76,7 +76,6 @@ $pconfig['skip_rules_gw_down'] = isset($config['system']['skip_rules_gw_down']);
 $pconfig['use_mfs_tmpvar'] = isset($config['system']['use_mfs_tmpvar']);
 $pconfig['use_mfs_tmp_size'] = $config['system']['use_mfs_tmp_size'];
 $pconfig['use_mfs_var_size'] = $config['system']['use_mfs_var_size'];
-$pconfig['do_not_send_uniqueid'] = isset($config['system']['do_not_send_uniqueid']);
 
 $use_mfs_tmpvar_before = isset($config['system']['use_mfs_tmpvar']) ? true : false;
 $use_mfs_tmpvar_after = $use_mfs_tmpvar_before;
@@ -229,11 +228,7 @@ if ($_POST) {
 			unset($config['system']['pkg_nochecksig']);
 		}
 
-		if ($_POST['do_not_send_uniqueid'] == "yes") {
-			$config['system']['do_not_send_uniqueid'] = true;
-		} else {
-			unset($config['system']['do_not_send_uniqueid']);
-		}
+		unset($config['system']['do_not_send_uniqueid']);
 
 		if ($_POST['powerd_enable'] == "yes") {
 			$config['system']['powerd_enable'] = true;
@@ -665,13 +660,6 @@ $section->addInput(new Form_Select(
 $form->add($section);
 
 $section = new Form_Section('Installation Feedback');
-
-$section->addInput(new Form_Checkbox(
-	'do_not_send_uniqueid',
-	'Netgate Device ID',
-	'Do NOT send Netgate Device ID with user agent',
-	$pconfig['do_not_send_uniqueid']
-))->setHelp('Enable this option to not send Netgate Device ID to pfSense as part of User-Agent header.');
 
 $form->add($section);
 
