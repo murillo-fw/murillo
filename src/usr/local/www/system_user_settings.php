@@ -5,7 +5,7 @@
  * part of Murillo (https://murillo.saggis.com)
  * Copyright (c) 2020 Saggi, LLC
  * All rights reserved
- * 
+ *
  * originally from pfSense (https://www.pfsense.org)
  * Copyright (c) 2004-2020 Rubicon Communications, LLC (Netgate)
  * All rights reserved.
@@ -182,7 +182,7 @@ events.push(function() {
 
 	// Handle displaying a warning message if a user-created theme is selected.
 	function setThemeWarning() {
-		if ($('#webguicss').val().startsWith("pfSense")) {
+		if ($('#webguicss').val().startsWith("Murillo")) {
 			$('#csstxt').html("").addClass("text-default");
 		} else {
 			$('#csstxt').html("<?=$csswarning?>").addClass("text-danger");
